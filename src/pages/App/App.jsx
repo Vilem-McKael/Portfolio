@@ -21,10 +21,10 @@ function App() {
 
   return (
     <div id='app' className='bg-white relative'>
-      <div id='navbar' className='justify-center items-center z-10'>
-        <NavBar />
+      <div id='navbar' className='flex z-10 w-[100vw]'>
+        <NavBar />  
       </div>
-      <div id='sidebar' className='bg-[#447733]'>
+      <div id='sidebar' className='bg-[#ffffff] border-[#deefde] border-r-[.1vmin]'>
         <SideBar links={currentSideBarLinks}/>
       </div>
       <div id="main" className='bg-[#aaeeaa]'>
