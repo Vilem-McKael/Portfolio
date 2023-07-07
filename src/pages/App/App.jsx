@@ -20,14 +20,14 @@ function App() {
   }
 
   return (
-    <div id='app' className='bg-red-400'>
-      <div id='navbar' className='bg-red-700 justify-center items-center'>
+    <div id='app' className='bg-white relative'>
+      <div id='navbar' className='justify-center items-center z-10'>
         <NavBar />
       </div>
-      <div id='sidebar' className=''>
+      <div id='sidebar' className='bg-[#447733]'>
         <SideBar links={currentSideBarLinks}/>
       </div>
-      <div id="main" className='bg-red-200'>
+      <div id="main" className='bg-[#aaeeaa]'>
         <Routes>
           <Route path='/' element={<WelcomePage updateSideBarLinks={updateSideBarLinks}/>}/>
           <Route path='/about' element={<AboutPage updateSideBarLinks={updateSideBarLinks}/>}/>

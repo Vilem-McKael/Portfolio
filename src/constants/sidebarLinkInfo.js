@@ -18,7 +18,7 @@ const sideBarInfo = {
         },
         {
             to: '#',
-            text: 'Contact Info'
+            text: 'About This Portfolio'
         },
     ],
     about: [
