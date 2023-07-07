@@ -9,22 +9,30 @@ import ProjectPage from '../ProjectPage/ProjectPage'
 import ContactPage from '../ContactPage/ContactPage'
 import SideBar from '../../components/SideBar/SideBar'
 
+import sideBarInfo from '../../constants/sidebarLinkInfo'
+
 function App() {
 
+  const [currentSideBarLinks, setCurrentSideBarLinks] = useState(sideBarInfo.welcome)
+
+  const updateSideBarLinks = (pageName) => {
+    setCurrentSideBarLinks(sideBarInfo[pageName])
+  }
+
   return (
-    <div id='app' className='grid grid-cols-3 height-[100vh] width-[100vw] bg-red-400'>
-      <div id='navbar' className='width-[20vw] bg-red-300 ml-0'>
+    <div id='app' className='bg-red-400'>
+      <div id='navbar' className='bg-red-700 justify-center items-center'>
         <NavBar />
       </div>
-      <div id='sidebar'>
-        <SideBar />
+      <div id='sidebar' className=''>
+        <SideBar links={currentSideBarLinks}/>
       </div>
-      <div id="main" className='width-[80vw] bg-red-200'>
+      <div id="main" className='bg-red-200'>
         <Routes>
-          <Route path='/' element={<WelcomePage />}/>
-          <Route path='/about' element={<AboutPage />}/>
-          <Route path='/projects' element={<ProjectPage />}/>
-          <Route path='/contact' element={<ContactPage />}/>
+          <Route path='/' element={<WelcomePage updateSideBarLinks={updateSideBarLinks}/>}/>
+          <Route path='/about' element={<AboutPage updateSideBarLinks={updateSideBarLinks}/>}/>
+          <Route path='/projects' element={<ProjectPage updateSideBarLinks={updateSideBarLinks}/>}/>
+          <Route path='/contact' element={<ContactPage updateSideBarLinks={updateSideBarLinks}/>}/>
         </Routes>
       </div>
     </div>
