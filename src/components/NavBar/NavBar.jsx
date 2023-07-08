@@ -6,8 +6,8 @@ import Colors from '../../constants/colors'
 
 export default function NavBar() {
   return (
-    <div className='flex flex-row ml-[160px] h-[100px] w-[100%] justify-evenly text-[1.6vw] text-light2 bg-gradient-to-bl from-dark/100 from-45% via-transparent rounded-bl-[100%]'>
-        <Link to='/' className='ml-[30vw] mt-[8px] tracking-wider hover:text-light1'>Home</Link>
+    <div className='flex flex-row ml-[160px] h-[70px] w-[100%] justify-evenly text-[1.6vw] text-light2 bg-dark rounded-bl-[95%]'>
+        <Link to='/' className='ml-[20vmin] mt-[8px] tracking-wider hover:text-light1'>Home</Link>
         <Link to='/about' className='mt-[12px] tracking-wider hover:text-stone-900'>About</Link>
         <Link to='/projects' className='mt-[20px] tracking-wider hover:text-stone-900'>Projects</Link>
         <Link to='/contact' className='mt-[32px] tracking-wider hover:text-stone-900'>Contact Me</Link>

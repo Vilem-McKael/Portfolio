@@ -1,17 +1,18 @@
 const sideBarInfo = {
     welcome: [
         {
-            to: '#',
+            to: '/#top',
             text: 'Welcome'
         },
         {
-            to: '#',
-            text: 'Skills'
-        },
-        {
-            to: '#',
+            to: '/#projects',
             text: 'Project Links'
         },
+        {
+            to: '/#skills',
+            text: 'Skills'
+        },
+        
         {
             to: '#',
             text: 'Current Projects'
