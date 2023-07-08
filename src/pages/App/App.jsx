@@ -10,6 +10,7 @@ import ContactPage from '../ContactPage/ContactPage'
 import SideBar from '../../components/SideBar/SideBar'
 
 import sideBarInfo from '../../constants/sidebarLinkInfo'
+import Colors from '../../constants/colors'
 
 function App() {
 
@@ -24,10 +25,10 @@ function App() {
       <div id='navbar' className='flex z-10 w-[100vw]'>
         <NavBar />  
       </div>
-      <div id='sidebar' className='bg-[#ffffff] border-[#deefde] border-r-[.1vmin]'>
+      <div id='sidebar' style={{backgroundColor: Colors.accent2}}> 
         <SideBar links={currentSideBarLinks}/>
       </div>
-      <div id="main" className='bg-[#aaeeaa]'>
+      <div id="main" style={{backgroundColor: Colors.dark}}>
         <Routes>
           <Route path='/' element={<WelcomePage updateSideBarLinks={updateSideBarLinks}/>}/>
           <Route path='/about' element={<AboutPage updateSideBarLinks={updateSideBarLinks}/>}/>
