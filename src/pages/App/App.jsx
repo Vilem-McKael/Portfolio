@@ -11,6 +11,7 @@ import SideBar from '../../components/SideBar/SideBar'
 
 import sideBarInfo from '../../constants/sidebarLinkInfo'
 import Colors from '../../constants/colors'
+import Footer from '../../components/Footer/Footer'
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <div id='app' className='bg-white relative'>
-      <div id='navbar' className='flex z-10 w-[100vw]'>
+      <div id='navbar' className='fixed mr-0 flex z-10 w-[100vw]'>
         <NavBar />  
       </div>
       <div id='sidebar' style={{backgroundColor: Colors.accent2}}> 
@@ -35,8 +36,13 @@ function App() {
           <Route path='/projects' element={<ProjectPage updateSideBarLinks={updateSideBarLinks}/>}/>
           <Route path='/contact' element={<ContactPage updateSideBarLinks={updateSideBarLinks}/>}/>
         </Routes>
+        <Footer />
       </div>
+      {/* <div>
+        <Footer />
+      </div> */}
     </div>
+    
   )
 }
 

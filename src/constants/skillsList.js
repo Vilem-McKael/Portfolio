@@ -27,22 +27,50 @@ const skills = {
         image: sql
       }
     ],
-    frameworks: [
-      {
-        name: 'React JS'
-      }
+    other: [
+        {
+            name: 'React JS'
+        },
+        {
+            name: 'Node.js'
+        },
+        {
+            name: 'Express.js'
+        },
+        {
+            name: 'Django'
+        },
+        {
+            name: 'Django REST Framework'
+        },
+        {
+            name: 'MongoDB'
+        },
+        {
+            name: 'Mongoose'
+        },
+        {
+            name: 'PostgreSQL'
+        },
+        {
+            name: 'Prisma'
+        },
+        {
+            name: 'Tailwind CSS'
+        },
+        {
+            name: 'Bootstrap'
+        },
+        {
+            name: 'EJS'
+        },
+        {
+            name: 'Heroku'
+        },
+        {
+            name: 'Netlify'
+        },
     ],
-    libraries: [
-        {
-            name: 'Tailwind CSS',
-        },
-        {
-            name: 'Bootstrap CSS',
-        },
-        {
-            name: ''
-        },
-    ]
   }
 
 export default skills;

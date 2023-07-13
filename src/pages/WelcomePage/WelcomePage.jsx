@@ -19,10 +19,7 @@ export default function WelcomePage({updateSideBarLinks}) {
 
   return (
     <div className='flex flex-col'>
-    <div id='top' className='h-[60px] bg-light2'>
-
-    </div>
-      <div className='flex flex-col relative h-[65vh] w-[100%] justify-center items-end bg-light2 rounded-tr-[56%]'>
+      <div className='flex flex-col relative h-[75vh] w-[100%] justify-center items-end bg-light2'>
         <div className='w-[40%]'>
           <div className='text-[4vmin] text-light1 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>Front End</div>
           <div className='text-[4vmin] text-accent2 ml-8 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>Software Engineer</div>
@@ -34,7 +31,9 @@ export default function WelcomePage({updateSideBarLinks}) {
       
       <div id='projects' className='bg-accent1'>
         <div className='flex justify-center items-center'>
-          <h1 style={{backgroundColor: Colors.light2}} className='text-center text-[48px] mt-[2vh] mb-[1vh] py-[1vh] px-[2vh] border-black border-[.1vmin] font-bold'>Projects</h1>
+          <div className='border-black border-[.3vmin] border-t-light2 rounded-b-[10px]'>
+            <h1 style={{backgroundColor: Colors.light2}} className=' text-[48px] py-[1vh] px-[2vh] border-black border-[.1vmin] border-t-light2 font-bold rounded-b-[6px]'>Projects</h1>
+          </div>
         </div>
         <div className='flex flex-row flex-wrap justify-center'>
           {projectCards.map((project, idx) => <ProjectCard link={project.link} title={project.title} demoGIF={project.demoGIF} description={project.description} key={idx}/>)}
@@ -55,17 +54,13 @@ export default function WelcomePage({updateSideBarLinks}) {
         </div>
 
         <div>
-          {skills.frameworks.map((skill, idx) => <SkillCard name={skill.name} image={skill.image} key={idx}/>)}
+          {skills.other.map((skill, idx) => <SkillCard name={skill.name} image={skill.image} key={idx}/>)}
         </div>
 
-        <div>
-          {skills.libraries.map((skill, idx) => <SkillCard name={skill.name} image={skill.image} key={idx}/>)}
-        </div>
       </div>
 
-      <div>
-        <h1>This portfolio was built using:</h1>
-        <p>React.js & TailwindCSS</p>
+      <div className='flex flex-col justify-center items-center text-light2'>
+        <h1 className='text-[32px]'>This portfolio was built using React.js & TailwindCSS</h1>
       </div>
       
 

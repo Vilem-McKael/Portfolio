@@ -1,0 +1,101 @@
+$flaticon_portfolio-font: "flaticon_portfolio";
+
+@font-face {
+    font-family: $flaticon_portfolio-font;
+    src: url("./flaticon_portfolio.ttf?ca6bbb76757de777ddb9e378b0ea5ed0") format("truetype"),
+url("./flaticon_portfolio.woff?ca6bbb76757de777ddb9e378b0ea5ed0") format("woff"),
+url("./flaticon_portfolio.woff2?ca6bbb76757de777ddb9e378b0ea5ed0") format("woff2"),
+url("./flaticon_portfolio.eot?ca6bbb76757de777ddb9e378b0ea5ed0#iefix") format("embedded-opentype"),
+url("./flaticon_portfolio.svg?ca6bbb76757de777ddb9e378b0ea5ed0#flaticon_portfolio") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_portfolio !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_portfolio-map: (
+    "home": "\f101",
+    "home-1": "\f102",
+    "home-2": "\f103",
+    "home-icon-silhouette": "\f104",
+    "user": "\f105",
+    "user-1": "\f106",
+    "user-2": "\f107",
+    "user-3": "\f108",
+    "avatar": "\f109",
+    "browser": "\f10a",
+    "browser-1": "\f10b",
+    "browser-2": "\f10c",
+    "browser-3": "\f10d",
+    "mail": "\f10e",
+    "mail-1": "\f10f",
+    "mail-inbox-app": "\f110",
+    "contact": "\f111",
+    "communicate": "\f112",
+    "mail-2": "\f113",
+);
+
+.flaticon-home:before {
+    content: map-get($flaticon_portfolio-map, "home");
+}
+.flaticon-home-1:before {
+    content: map-get($flaticon_portfolio-map, "home-1");
+}
+.flaticon-home-2:before {
+    content: map-get($flaticon_portfolio-map, "home-2");
+}
+.flaticon-home-icon-silhouette:before {
+    content: map-get($flaticon_portfolio-map, "home-icon-silhouette");
+}
+.flaticon-user:before {
+    content: map-get($flaticon_portfolio-map, "user");
+}
+.flaticon-user-1:before {
+    content: map-get($flaticon_portfolio-map, "user-1");
+}
+.flaticon-user-2:before {
+    content: map-get($flaticon_portfolio-map, "user-2");
+}
+.flaticon-user-3:before {
+    content: map-get($flaticon_portfolio-map, "user-3");
+}
+.flaticon-avatar:before {
+    content: map-get($flaticon_portfolio-map, "avatar");
+}
+.flaticon-browser:before {
+    content: map-get($flaticon_portfolio-map, "browser");
+}
+.flaticon-browser-1:before {
+    content: map-get($flaticon_portfolio-map, "browser-1");
+}
+.flaticon-browser-2:before {
+    content: map-get($flaticon_portfolio-map, "browser-2");
+}
+.flaticon-browser-3:before {
+    content: map-get($flaticon_portfolio-map, "browser-3");
+}
+.flaticon-mail:before {
+    content: map-get($flaticon_portfolio-map, "mail");
+}
+.flaticon-mail-1:before {
+    content: map-get($flaticon_portfolio-map, "mail-1");
+}
+.flaticon-mail-inbox-app:before {
+    content: map-get($flaticon_portfolio-map, "mail-inbox-app");
+}
+.flaticon-contact:before {
+    content: map-get($flaticon_portfolio-map, "contact");
+}
+.flaticon-communicate:before {
+    content: map-get($flaticon_portfolio-map, "communicate");
+}
+.flaticon-mail-2:before {
+    content: map-get($flaticon_portfolio-map, "mail-2");
+}
