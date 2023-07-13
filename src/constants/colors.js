@@ -4,7 +4,6 @@ const Colors = {
     accent1: '#B5D99C',
     accent2: '#E65F5C',
     dark: '#0F0326',
-
 }
 
 export default Colors

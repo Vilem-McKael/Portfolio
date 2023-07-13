@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 
-export default function AboutPage({updateSideBarLinks}) {
+export default function AboutPage({updatePageName}) {
 
   useEffect(() => {
-    updateSideBarLinks('about')
+    updatePageName('about')
   }, [])
 
   return (

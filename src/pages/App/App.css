@@ -1,21 +1,6 @@
 #app {
   display: grid;
-  grid-template: 1fr / 160px 1fr;
   min-height: 100vh;
-}
-
-#sidebar {
-  grid-area: 1 / 1 / 1 / 2;
-  position: fixed;
-}
-
-#navbar {
-  grid-area: 1 / 2 / 2 / 3;
-  position: fixed;
-}
-
-#main {
-  grid-area: 1 / 2 / 2 / 3;
 }
 
 /* #app::-webkit-scrollbar {

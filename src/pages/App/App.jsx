@@ -9,32 +9,28 @@ import ProjectPage from '../ProjectPage/ProjectPage'
 import ContactPage from '../ContactPage/ContactPage'
 import SideBar from '../../components/SideBar/SideBar'
 
-import sideBarInfo from '../../constants/sidebarLinkInfo'
 import Colors from '../../constants/colors'
 import Footer from '../../components/Footer/Footer'
 
 function App() {
 
-  const [currentSideBarLinks, setCurrentSideBarLinks] = useState(sideBarInfo.welcome)
+  const [currentPageName, setCurrentPageName] = useState([])
 
-  const updateSideBarLinks = (pageName) => {
-    setCurrentSideBarLinks(sideBarInfo[pageName])
+  const updatePageName = (pageName) => {
+    setCurrentPageName(pageName)
   }
 
   return (
     <div id='app' className='bg-white relative'>
-      <div id='navbar' className='fixed mr-0 flex z-10 w-[100vw]'>
-        <NavBar />  
-      </div>
-      <div id='sidebar' style={{backgroundColor: Colors.accent2}}> 
-        <SideBar links={currentSideBarLinks}/>
+      <div id='sidebar' className='fixed z-10 left-0 h-[100vh] flex flex-col justify-center'> 
+        <SideBar currentPageName={currentPageName}/>
       </div>
       <div id="main" style={{backgroundColor: Colors.dark}}>
         <Routes>
-          <Route path='/' element={<WelcomePage updateSideBarLinks={updateSideBarLinks}/>}/>
-          <Route path='/about' element={<AboutPage updateSideBarLinks={updateSideBarLinks}/>}/>
-          <Route path='/projects' element={<ProjectPage updateSideBarLinks={updateSideBarLinks}/>}/>
-          <Route path='/contact' element={<ContactPage updateSideBarLinks={updateSideBarLinks}/>}/>
+          <Route path='/' element={<WelcomePage updatePageName={updatePageName}/>}/>
+          <Route path='/about' element={<AboutPage updatePageName={updatePageName}/>}/>
+          <Route path='/projects' element={<ProjectPage updatePageName={updatePageName}/>}/>
+          <Route path='/contact' element={<ContactPage updatePageName={updatePageName}/>}/>
         </Routes>
         <Footer />
       </div>

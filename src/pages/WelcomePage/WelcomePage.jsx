@@ -10,28 +10,28 @@ import Colors from '../../constants/colors'
 
 import tobey from '../../assets/images/tobey-maguire.png'
 
-export default function WelcomePage({updateSideBarLinks}) {
+export default function WelcomePage({updatePageName}) {
 
 
   useEffect(() => {
-    updateSideBarLinks('welcome')
+    updatePageName('welcome')
   }, [])
 
   return (
     <div className='flex flex-col'>
-      <div className='flex flex-col relative h-[75vh] w-[100%] justify-center items-end bg-light2'>
+      <div className='flex flex-col relative h-[75vh] w-[100%] px-[10vw] justify-center items-end bg-light2'>
         <div className='w-[40%]'>
           <div className='text-[4vmin] text-light1 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>Front End</div>
           <div className='text-[4vmin] text-accent2 ml-8 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>Software Engineer</div>
         </div>
-        <div className='w-[60%]'>
-          <img id="tobey" src={tobey} className="absolute bottom-0 left-0 max-h-[100%] max-w-[80%]" />
+        <div className='w-[50%]'>
+          <img id="tobey" src={tobey} className="absolute bottom-0 left-[10vw] max-h-[100%] max-w-[60%]" />
         </div>
       </div>
       
-      <div id='projects' className='bg-accent1'>
-        <div className='flex justify-center items-center'>
-          <div className='border-black border-[.3vmin] border-t-light2 rounded-b-[10px]'>
+      <div id='projects' className='bg-accent1 px-[10vw]'>
+        <div className='flex justify-end items-center'>
+          <div className='mb-4 border-dark border-[.3vmin] border-t-light2 rounded-b-[10px]'>
             <h1 style={{backgroundColor: Colors.light2}} className=' text-[48px] py-[1vh] px-[2vh] border-black border-[.1vmin] border-t-light2 font-bold rounded-b-[6px]'>Projects</h1>
           </div>
         </div>
@@ -40,21 +40,24 @@ export default function WelcomePage({updateSideBarLinks}) {
         </div>
       </div>
         
-      <div id='skills' className='bg-dark'>
+      <div id='skills' className='bg-dark px-[10vw]'>
         <div>
-          <div className='flex justify-center items-center'>
-              <h1 className='text-center text-[48px] text-light2 mt-[2vh] mb-[1vh] py-[1vh] px-[2vh] bg-med_dark border-black border-[.1vmin] font-bold'>Skills</h1>
+        <div className='flex justify-end items-center'>
+          <div className='mb-4 bg-accent1 border-light2 border-[.3vmin] border-t-accent1 rounded-b-[10px]'>
+            <h1 className=' text-[48px] py-[1vh] px-[2vh] border-black border-[.1vmin] border-t-accent1 font-bold rounded-b-[6px]'>Skills</h1>
           </div>
+        </div>
           <div className='flex justify-start items-center'>
               <h1 className='text-[30px] text-light2 mt-[2vh] mb-[1vh] ml-[5vw] py-[1vh] px-[2vh]'>I build web applications using:</h1>
           </div>
           <div className='flex flex-row flex-wrap justify-center items-evenly'>
-            {skills.languages.map((skill, idx) => <SkillCard name={skill.name} image={skill.image} key={idx}/>)}
+            {skills.map((skill, idx) => <SkillCard name={skill.name} image={skill.image} key={idx}/>)}
+            <div className='flex flex-col justify-center items-center mx-8 my-4 w-[20vmin] h-[20vmin]'>
+              <div className='flex justify-center items-center h-[18vmin] w-[18vmin] bg-light2/10 rounded-[50%]'>
+                <h1 className='text-center m-2 text-light2 text-[calc(10px+1vmin)]'>... and more to come!</h1>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div>
-          {skills.other.map((skill, idx) => <SkillCard name={skill.name} image={skill.image} key={idx}/>)}
         </div>
 
       </div>

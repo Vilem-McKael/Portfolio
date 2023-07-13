@@ -18,7 +18,7 @@ const sideBarInfo = {
             text: 'Current Projects'
         },
         {
-            to: '#',
+            to: '/#',
             text: 'About This Portfolio'
         },
     ],
