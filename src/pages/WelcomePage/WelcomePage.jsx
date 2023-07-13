@@ -9,6 +9,11 @@ import skills from '../../constants/skillsList'
 import Colors from '../../constants/colors'
 
 import tobey from '../../assets/images/tobey-maguire.png'
+import codeImg from '../../assets/images/code.png'
+
+import { Carousel } from 'react-responsive-carousel'
+import ProjectCarousel from '../../components/ProjectCarousel/ProjectCarousel'
+import Slider from '../../components/Slider/Slider'
 
 export default function WelcomePage({updatePageName}) {
 
@@ -29,15 +34,14 @@ export default function WelcomePage({updatePageName}) {
         </div>
       </div>
       
-      <div id='projects' className='bg-accent1 px-[10vw] pb-[10vh] min-h-[100vh]'>
+      <div id='projects' className='bg-accent1 px-[10vw] pb-[10vh]'>
         <div className='sticky top-0 flex justify-end items-center mb-[8vh]'>
           <div className='border-dark border-[.3vmin] border-t-light2 rounded-b-[10px]'>
             <h1 style={{backgroundColor: Colors.light2}} className=' text-[48px] py-[1vh] px-[2vh] border-black border-[.1vmin] border-t-light2 font-bold rounded-b-[6px]'>Projects</h1>
           </div>
         </div>
-        <div className='flex flex-row flex-wrap justify-center'>
-          {projectCards.map((project, idx) => <ProjectCard link={project.link} title={project.title} demoGIF={project.demoGIF} description={project.description} key={idx}/>)}
-        </div>
+        <Slider slides={projectCards}/>
+
       </div>
         
       <div id='skills' className='bg-dark px-[10vw]'>
@@ -52,10 +56,11 @@ export default function WelcomePage({updatePageName}) {
           </div>
           <div className='flex flex-row flex-wrap justify-center items-evenly mb-[10vmin]'>
             {skills.map((skill, idx) => <SkillCard name={skill.name} image={skill.image} key={idx}/>)}
-            <div className='flex-col justify-center items-center mx-[2vw] my-[2vh] w-[14vmin] h-[14vmin]'>
-              <div className='flex justify-center items-center h-[18vmin] w-[18vmin] bg-light2/10 rounded-[50%]'>
-                <h1 className='text-center m-2 text-light2 text-[calc(10px+1vmin)]'>... and more to come!</h1>
+            <div className='flex-col justify-center items-center mx-[4vw] my-[6vh] w-[12vmin] h-[14vmin]'>
+              <div className='flex justify-center items-center h-[12vmin] w-[12vmin] bg-light2/10 rounded-[50%]'>
+                <img src={codeImg} className='max-h-[6vmin] max-w-[6vmin] m-2 text-light2' alt={'... and more to come!'} title={'... and more to come!'}/>
               </div>
+              <h1 className='text-center m-2 text-light2 text-[calc(10px+1vmin)]'>... and more to come!</h1>
             </div>
           </div>
         </div>
