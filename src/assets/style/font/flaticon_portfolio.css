@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon_portfolio";
-    src: url("./flaticon_portfolio.ttf?ca6bbb76757de777ddb9e378b0ea5ed0") format("truetype"),
-url("./flaticon_portfolio.woff?ca6bbb76757de777ddb9e378b0ea5ed0") format("woff"),
-url("./flaticon_portfolio.woff2?ca6bbb76757de777ddb9e378b0ea5ed0") format("woff2"),
-url("./flaticon_portfolio.eot?ca6bbb76757de777ddb9e378b0ea5ed0#iefix") format("embedded-opentype"),
-url("./flaticon_portfolio.svg?ca6bbb76757de777ddb9e378b0ea5ed0#flaticon_portfolio") format("svg");
+    src: url("./flaticon_portfolio.ttf?a1e43bc9b666def6ff83ebcd80394160") format("truetype"),
+url("./flaticon_portfolio.woff?a1e43bc9b666def6ff83ebcd80394160") format("woff"),
+url("./flaticon_portfolio.woff2?a1e43bc9b666def6ff83ebcd80394160") format("woff2"),
+url("./flaticon_portfolio.eot?a1e43bc9b666def6ff83ebcd80394160#iefix") format("embedded-opentype"),
+url("./flaticon_portfolio.svg?a1e43bc9b666def6ff83ebcd80394160#flaticon_portfolio") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -74,4 +74,40 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 .flaticon-mail-2:before {
     content: "\f113";
+}
+.flaticon-left-chevron:before {
+    content: "\f114";
+}
+.flaticon-back:before {
+    content: "\f115";
+}
+.flaticon-left:before {
+    content: "\f116";
+}
+.flaticon-arrow-left:before {
+    content: "\f117";
+}
+.flaticon-previous:before {
+    content: "\f118";
+}
+.flaticon-left-arrow:before {
+    content: "\f119";
+}
+.flaticon-right-arrow:before {
+    content: "\f11a";
+}
+.flaticon-next:before {
+    content: "\f11b";
+}
+.flaticon-next-1:before {
+    content: "\f11c";
+}
+.flaticon-arrow-right:before {
+    content: "\f11d";
+}
+.flaticon-next-2:before {
+    content: "\f11e";
+}
+.flaticon-right-arrow-1:before {
+    content: "\f11f";
 }

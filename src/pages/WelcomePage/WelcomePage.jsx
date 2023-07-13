@@ -29,7 +29,7 @@ export default function WelcomePage({updatePageName}) {
         </div>
       </div>
       
-      <div id='projects' className='bg-accent1 px-[10vw]'>
+      <div id='projects' className='bg-accent1 px-[10vw] pb-[10vh] min-h-[100vh]'>
         <div className='sticky top-0 flex justify-end items-center mb-[8vh]'>
           <div className='border-dark border-[.3vmin] border-t-light2 rounded-b-[10px]'>
             <h1 style={{backgroundColor: Colors.light2}} className=' text-[48px] py-[1vh] px-[2vh] border-black border-[.1vmin] border-t-light2 font-bold rounded-b-[6px]'>Projects</h1>
@@ -50,9 +50,9 @@ export default function WelcomePage({updatePageName}) {
           <div className='flex justify-start items-center'>
               <h1 className='text-[30px] text-light2 mt-[2vh] mb-[1vh] ml-[5vw] py-[1vh] px-[2vh]'>I build web applications using:</h1>
           </div>
-          <div className='flex flex-row flex-wrap justify-center items-evenly'>
+          <div className='flex flex-row flex-wrap justify-center items-evenly mb-[10vmin]'>
             {skills.map((skill, idx) => <SkillCard name={skill.name} image={skill.image} key={idx}/>)}
-            <div className='flex flex-col justify-center items-center mx-8 my-4 w-[20vmin] h-[20vmin]'>
+            <div className='flex-col justify-center items-center mx-[2vw] my-[2vh] w-[14vmin] h-[14vmin]'>
               <div className='flex justify-center items-center h-[18vmin] w-[18vmin] bg-light2/10 rounded-[50%]'>
                 <h1 className='text-center m-2 text-light2 text-[calc(10px+1vmin)]'>... and more to come!</h1>
               </div>

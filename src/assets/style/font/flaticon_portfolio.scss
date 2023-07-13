@@ -2,11 +2,11 @@ $flaticon_portfolio-font: "flaticon_portfolio";
 
 @font-face {
     font-family: $flaticon_portfolio-font;
-    src: url("./flaticon_portfolio.ttf?ca6bbb76757de777ddb9e378b0ea5ed0") format("truetype"),
-url("./flaticon_portfolio.woff?ca6bbb76757de777ddb9e378b0ea5ed0") format("woff"),
-url("./flaticon_portfolio.woff2?ca6bbb76757de777ddb9e378b0ea5ed0") format("woff2"),
-url("./flaticon_portfolio.eot?ca6bbb76757de777ddb9e378b0ea5ed0#iefix") format("embedded-opentype"),
-url("./flaticon_portfolio.svg?ca6bbb76757de777ddb9e378b0ea5ed0#flaticon_portfolio") format("svg");
+    src: url("./flaticon_portfolio.ttf?a1e43bc9b666def6ff83ebcd80394160") format("truetype"),
+url("./flaticon_portfolio.woff?a1e43bc9b666def6ff83ebcd80394160") format("woff"),
+url("./flaticon_portfolio.woff2?a1e43bc9b666def6ff83ebcd80394160") format("woff2"),
+url("./flaticon_portfolio.eot?a1e43bc9b666def6ff83ebcd80394160#iefix") format("embedded-opentype"),
+url("./flaticon_portfolio.svg?a1e43bc9b666def6ff83ebcd80394160#flaticon_portfolio") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -40,6 +40,18 @@ $flaticon_portfolio-map: (
     "contact": "\f111",
     "communicate": "\f112",
     "mail-2": "\f113",
+    "left-chevron": "\f114",
+    "back": "\f115",
+    "left": "\f116",
+    "arrow-left": "\f117",
+    "previous": "\f118",
+    "left-arrow": "\f119",
+    "right-arrow": "\f11a",
+    "next": "\f11b",
+    "next-1": "\f11c",
+    "arrow-right": "\f11d",
+    "next-2": "\f11e",
+    "right-arrow-1": "\f11f",
 );
 
 .flaticon-home:before {
@@ -98,4 +110,40 @@ $flaticon_portfolio-map: (
 }
 .flaticon-mail-2:before {
     content: map-get($flaticon_portfolio-map, "mail-2");
+}
+.flaticon-left-chevron:before {
+    content: map-get($flaticon_portfolio-map, "left-chevron");
+}
+.flaticon-back:before {
+    content: map-get($flaticon_portfolio-map, "back");
+}
+.flaticon-left:before {
+    content: map-get($flaticon_portfolio-map, "left");
+}
+.flaticon-arrow-left:before {
+    content: map-get($flaticon_portfolio-map, "arrow-left");
+}
+.flaticon-previous:before {
+    content: map-get($flaticon_portfolio-map, "previous");
+}
+.flaticon-left-arrow:before {
+    content: map-get($flaticon_portfolio-map, "left-arrow");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon_portfolio-map, "right-arrow");
+}
+.flaticon-next:before {
+    content: map-get($flaticon_portfolio-map, "next");
+}
+.flaticon-next-1:before {
+    content: map-get($flaticon_portfolio-map, "next-1");
+}
+.flaticon-arrow-right:before {
+    content: map-get($flaticon_portfolio-map, "arrow-right");
+}
+.flaticon-next-2:before {
+    content: map-get($flaticon_portfolio-map, "next-2");
+}
+.flaticon-right-arrow-1:before {
+    content: map-get($flaticon_portfolio-map, "right-arrow-1");
 }

@@ -11,6 +11,7 @@ import SideBar from '../../components/SideBar/SideBar'
 
 import Colors from '../../constants/colors'
 import Footer from '../../components/Footer/Footer'
+import SocialButtons from '../../components/SocialButtons/SocialButtons'
 
 function App() {
 
@@ -22,6 +23,9 @@ function App() {
 
   return (
     <div id='app' className='bg-white relative'>
+      <div id='social-buttons' className='fixed right-[2vh] top-[4vh] z-20'>
+        <SocialButtons />
+      </div>
       <div id='sidebar' className='fixed z-10 left-0 h-[100vh] flex flex-col justify-center'> 
         <SideBar currentPageName={currentPageName}/>
       </div>
