@@ -14,7 +14,7 @@ import Footer from '../../components/Footer/Footer'
 
 function App() {
 
-  const [currentPageName, setCurrentPageName] = useState([])
+  const [currentPageName, setCurrentPageName] = useState('')
 
   const updatePageName = (pageName) => {
     setCurrentPageName(pageName)

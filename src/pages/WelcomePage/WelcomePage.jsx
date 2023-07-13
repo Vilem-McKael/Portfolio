@@ -30,8 +30,8 @@ export default function WelcomePage({updatePageName}) {
       </div>
       
       <div id='projects' className='bg-accent1 px-[10vw]'>
-        <div className='flex justify-end items-center'>
-          <div className='mb-4 border-dark border-[.3vmin] border-t-light2 rounded-b-[10px]'>
+        <div className='sticky top-0 flex justify-end items-center mb-[8vh]'>
+          <div className='border-dark border-[.3vmin] border-t-light2 rounded-b-[10px]'>
             <h1 style={{backgroundColor: Colors.light2}} className=' text-[48px] py-[1vh] px-[2vh] border-black border-[.1vmin] border-t-light2 font-bold rounded-b-[6px]'>Projects</h1>
           </div>
         </div>
@@ -42,9 +42,9 @@ export default function WelcomePage({updatePageName}) {
         
       <div id='skills' className='bg-dark px-[10vw]'>
         <div>
-        <div className='flex justify-end items-center'>
+        <div className='sticky top-0 flex justify-end items-center'>
           <div className='mb-4 bg-accent1 border-light2 border-[.3vmin] border-t-accent1 rounded-b-[10px]'>
-            <h1 className=' text-[48px] py-[1vh] px-[2vh] border-black border-[.1vmin] border-t-accent1 font-bold rounded-b-[6px]'>Skills</h1>
+            <h1 className='text-[48px] py-[1vh] px-[2vh] border-black border-[.1vmin] border-t-accent1 font-bold rounded-b-[6px]'>Skills</h1>
           </div>
         </div>
           <div className='flex justify-start items-center'>
