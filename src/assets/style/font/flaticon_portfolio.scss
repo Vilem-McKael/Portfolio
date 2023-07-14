@@ -1,0 +1,149 @@
+$flaticon_portfolio-font: "flaticon_portfolio";
+
+@font-face {
+    font-family: $flaticon_portfolio-font;
+    src: url("./flaticon_portfolio.ttf?a1e43bc9b666def6ff83ebcd80394160") format("truetype"),
+url("./flaticon_portfolio.woff?a1e43bc9b666def6ff83ebcd80394160") format("woff"),
+url("./flaticon_portfolio.woff2?a1e43bc9b666def6ff83ebcd80394160") format("woff2"),
+url("./flaticon_portfolio.eot?a1e43bc9b666def6ff83ebcd80394160#iefix") format("embedded-opentype"),
+url("./flaticon_portfolio.svg?a1e43bc9b666def6ff83ebcd80394160#flaticon_portfolio") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_portfolio !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_portfolio-map: (
+    "home": "\f101",
+    "home-1": "\f102",
+    "home-2": "\f103",
+    "home-icon-silhouette": "\f104",
+    "user": "\f105",
+    "user-1": "\f106",
+    "user-2": "\f107",
+    "user-3": "\f108",
+    "avatar": "\f109",
+    "browser": "\f10a",
+    "browser-1": "\f10b",
+    "browser-2": "\f10c",
+    "browser-3": "\f10d",
+    "mail": "\f10e",
+    "mail-1": "\f10f",
+    "mail-inbox-app": "\f110",
+    "contact": "\f111",
+    "communicate": "\f112",
+    "mail-2": "\f113",
+    "left-chevron": "\f114",
+    "back": "\f115",
+    "left": "\f116",
+    "arrow-left": "\f117",
+    "previous": "\f118",
+    "left-arrow": "\f119",
+    "right-arrow": "\f11a",
+    "next": "\f11b",
+    "next-1": "\f11c",
+    "arrow-right": "\f11d",
+    "next-2": "\f11e",
+    "right-arrow-1": "\f11f",
+);
+
+.flaticon-home:before {
+    content: map-get($flaticon_portfolio-map, "home");
+}
+.flaticon-home-1:before {
+    content: map-get($flaticon_portfolio-map, "home-1");
+}
+.flaticon-home-2:before {
+    content: map-get($flaticon_portfolio-map, "home-2");
+}
+.flaticon-home-icon-silhouette:before {
+    content: map-get($flaticon_portfolio-map, "home-icon-silhouette");
+}
+.flaticon-user:before {
+    content: map-get($flaticon_portfolio-map, "user");
+}
+.flaticon-user-1:before {
+    content: map-get($flaticon_portfolio-map, "user-1");
+}
+.flaticon-user-2:before {
+    content: map-get($flaticon_portfolio-map, "user-2");
+}
+.flaticon-user-3:before {
+    content: map-get($flaticon_portfolio-map, "user-3");
+}
+.flaticon-avatar:before {
+    content: map-get($flaticon_portfolio-map, "avatar");
+}
+.flaticon-browser:before {
+    content: map-get($flaticon_portfolio-map, "browser");
+}
+.flaticon-browser-1:before {
+    content: map-get($flaticon_portfolio-map, "browser-1");
+}
+.flaticon-browser-2:before {
+    content: map-get($flaticon_portfolio-map, "browser-2");
+}
+.flaticon-browser-3:before {
+    content: map-get($flaticon_portfolio-map, "browser-3");
+}
+.flaticon-mail:before {
+    content: map-get($flaticon_portfolio-map, "mail");
+}
+.flaticon-mail-1:before {
+    content: map-get($flaticon_portfolio-map, "mail-1");
+}
+.flaticon-mail-inbox-app:before {
+    content: map-get($flaticon_portfolio-map, "mail-inbox-app");
+}
+.flaticon-contact:before {
+    content: map-get($flaticon_portfolio-map, "contact");
+}
+.flaticon-communicate:before {
+    content: map-get($flaticon_portfolio-map, "communicate");
+}
+.flaticon-mail-2:before {
+    content: map-get($flaticon_portfolio-map, "mail-2");
+}
+.flaticon-left-chevron:before {
+    content: map-get($flaticon_portfolio-map, "left-chevron");
+}
+.flaticon-back:before {
+    content: map-get($flaticon_portfolio-map, "back");
+}
+.flaticon-left:before {
+    content: map-get($flaticon_portfolio-map, "left");
+}
+.flaticon-arrow-left:before {
+    content: map-get($flaticon_portfolio-map, "arrow-left");
+}
+.flaticon-previous:before {
+    content: map-get($flaticon_portfolio-map, "previous");
+}
+.flaticon-left-arrow:before {
+    content: map-get($flaticon_portfolio-map, "left-arrow");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon_portfolio-map, "right-arrow");
+}
+.flaticon-next:before {
+    content: map-get($flaticon_portfolio-map, "next");
+}
+.flaticon-next-1:before {
+    content: map-get($flaticon_portfolio-map, "next-1");
+}
+.flaticon-arrow-right:before {
+    content: map-get($flaticon_portfolio-map, "arrow-right");
+}
+.flaticon-next-2:before {
+    content: map-get($flaticon_portfolio-map, "next-2");
+}
+.flaticon-right-arrow-1:before {
+    content: map-get($flaticon_portfolio-map, "right-arrow-1");
+}

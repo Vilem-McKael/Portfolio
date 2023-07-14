@@ -1,0 +1,6 @@
+.aboutPage {
+    background-image: url('../../assets/images/losangeles.jpeg');
+    background-position: center;
+    background-size: cover;
+    z-index: 10;
+}
