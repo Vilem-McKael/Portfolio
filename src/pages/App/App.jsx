@@ -29,7 +29,7 @@ function App() {
       <div id='sidebar' className='fixed z-10 left-0 h-[100vh] flex flex-col justify-center'> 
         <SideBar currentPageName={currentPageName}/>
       </div>
-      <div id="main" style={{backgroundColor: Colors.dark}}>
+      <div id="main" className='bg-gradient-to-br from-dark to-med_dark'>
         <Routes>
           <Route path='/' element={<WelcomePage updatePageName={updatePageName}/>}/>
           <Route path='/about' element={<AboutPage updatePageName={updatePageName}/>}/>

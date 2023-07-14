@@ -4,7 +4,7 @@ import './WelcomePage.css'
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
 import SkillCard from '../../components/SkillCard/SkillCard'
 
-import projectCards from '../../constants/projectCardInfo'
+import Projects from '../../constants/projects'
 import skills from '../../constants/skillsList'
 import Colors from '../../constants/colors'
 
@@ -23,7 +23,7 @@ export default function WelcomePage({updatePageName}) {
   }, [])
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col w-[100vw]'>
       <div className='flex flex-col relative h-[75vh] w-[100%] px-[10vw] justify-center items-end bg-light2'>
         <div className='w-[40%]'>
           <div className='text-[4vmin] text-light1 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>Front End</div>
@@ -40,7 +40,7 @@ export default function WelcomePage({updatePageName}) {
             <h1 style={{backgroundColor: Colors.light2}} className=' text-[48px] py-[1vh] px-[2vh] border-black border-[.1vmin] border-t-light2 font-bold rounded-b-[6px]'>Projects</h1>
           </div>
         </div>
-        <Slider slides={projectCards}/>
+        <Slider slides={Projects}/>
 
       </div>
         

@@ -74,7 +74,7 @@ export default function SideBar({currentPageName}) {
                 <div className='sub-menu-parent flex flex-col'>
                 {hoverAbout && sideBarInfo['about'].map((link, idx) => {
                     return (
-                        <div key={idx} className='sub-menu bg-accent2_dark ml-[2vw] w-[100%] flex justify-start items-start'>
+                        <div key={idx} className='sub-menu ml-[2vw] w-[100%] flex justify-start items-start'>
                             <HashLink to={link.to} smooth={true} className='text-[calc(8px+.5vh)] w-[10vw] my-[.1vh] text-light2 transition-transform delay-50 hover:scale-105 hover:text-light1'>{link.text}</HashLink>
                         </div>
                     )

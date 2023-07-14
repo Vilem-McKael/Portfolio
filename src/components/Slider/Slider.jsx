@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import projectCards from '../../constants/projectCardInfo'
+import Projects from '../../constants/projects'
 
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
 
@@ -8,21 +8,6 @@ import {RxDotFilled} from 'react-icons/rx'
 import tennisGIF from '../../assets/gifs/tennisball.gif'
 
 export default function Slider({slides}) {
-
-    // const slides = [
-    //     {
-    //         url: 'https://www.rd.com/wp-content/uploads/2016/01/04-dog-breeds-dalmation.jpg'
-    //     },
-    //     {
-    //         url: 'https://s-media-cache-ak0.pinimg.com/originals/c8/cf/4f/c8cf4f3e83249d805d9dbedd7ccc850f.jpg'
-    //     },
-    //     {
-    //         url: 'https://1.bp.blogspot.com/-4oxmvEuCj50/URJPBmH9wwI/AAAAAAAACqQ/Rr2jOQbmObw/s1600/dogs+breeds.jpg'
-    //     },
-    //     {
-    //         url: 'https://s-media-cache-ak0.pinimg.com/originals/f7/9b/b0/f79bb0ae9547c1222af1d7e38e952d19.jpg'
-    //     },
-    // ]
 
     const [currentIndexes, setCurrentIndexes] = useState([0, 1, 2])
 
@@ -72,7 +57,7 @@ export default function Slider({slides}) {
             <BsChevronCompactRight onClick={nextSlide} size={30} />
         </div>
         <div className='flex top-4 justify-center pt-[5vmin]'>
-            {projectCards.map((card, idx) => (
+            {Projects.map((card, idx) => (
                 <div className={'text-2xl cursor-pointer'} key={idx}>
                     <RxDotFilled style={{color: `${idx === currentIndexes[0] ? 'grey' : 'black'}`}} onClick={() => goToSlide(idx)} />
                 </div>
