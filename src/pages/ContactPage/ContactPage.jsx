@@ -1,22 +1,45 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import githubLogo from '../../assets/images/github-mark.png'
 import linkedInLogo from '../../assets/images/linkedin2.png'
 import { Link } from 'react-router-dom'
 
+import * as mailjetAPI from '../../utilities/mailjet-api.js'
+
 export default function ContactPage({updatePageName}) {
+
+  const initialFormData = {
+    name : '',
+    email: '',
+    company: '',
+    message: ''
+  }
+
+  const [formData, setFormData] = useState(initialFormData)
 
   useEffect(() => {
     updatePageName('contact')
   }, [])
 
-  const handleSubmit = () => {
+  const handleChange = (evt) => {
+    setFormData(prevFormData => {
+      return {...prevFormData, [evt.target.name]: evt.target.value}
+    });
+  }
 
+  const handleSubmit = async () => {
+    await mailjetAPI.sendMessage(formData)
+      .then((result) => {
+        console.log(result)
+      }).catch((err) => {
+        console.log(err)
+      });
+    // setFormData(initialFormData)
   }
 
   return (
-    <div className='flex flex-col justify-center items-center h-[100vh] w-[100vw] px-[10vw] text-light2 text-center'>
-      <div className='mt-[8vh] mb-[8vh] bg-light1 border-light border-[.3vmin] rounded-[10px]'>
+    <div className='flex flex-col justify-center items-center h-[90vh] w-[100vw] px-[10vw] text-light2 text-center'>
+      <div className='mt-[8vh] mb-[4vh] bg-light1 border-light border-[.3vmin] rounded-[10px]'>
             <h1 className='text-[48px] text-dark py-[1vh] px-[2vh] border-black border-[.1vmin] font-bold rounded-[6px]'>Contact Me</h1>
           </div>
       <div className='flex flex-row justify-evenly w-[80vw] flex-wrap'>
@@ -44,18 +67,18 @@ export default function ContactPage({updatePageName}) {
           Feel welcome to leave a message for me down below,<br />
           and I will get back to you as soon as possible
         </div>
-        <div className='flex flex-row w-[60vw] justify-between mx-[2vw] mb-[2vh]'>
+        <div className='flex flex-row w-[60vw] justify-between mb-[2vh]'>
           <div>
-            <input className='p-2 bg-light2 text-dark placeholder-gray-500 text-[1.5vmin]' placeholder='Name'></input>
+            <input className='mr-[1vw] p-2 bg-light2 text-dark placeholder-gray-500 text-[1.5vmin]' name='name' value={formData.name} placeholder='Name' onChange={handleChange}></input>
           </div>
           <div>
-            <input className='p-2 bg-light2 text-dark placeholder-gray-500 text-[1.5vmin]' placeholder='Email'></input>
+            <input className='mx-[1vw] p-2 bg-light2 text-dark placeholder-gray-500 text-[1.5vmin]' name='email' value={formData.email} placeholder='Email' onChange={handleChange}></input>
           </div>
           <div>
-            <input className='p-2 bg-light2 text-dark placeholder-gray-500 text-[1.5vmin]' placeholder='Company (if applicable)'></input>
+            <input className='ml-[1vw] p-2 bg-light2 text-dark placeholder-gray-500 text-[1.5vmin]' name='company' value={formData.company} placeholder='Company (if applicable)' onChange={handleChange}></input>
           </div>
         </div>
-        <textarea className=' p-2 bg-light2 w-[60vw] h-[20vh] text-dark placeholder-gray-500 text-[1.5vmin]' placeholder='Your Message'>
+        <textarea className=' p-2 bg-light2 w-[60vw] h-[20vh] text-dark placeholder-gray-500 text-[1.5vmin]' name='message' value={formData.message} placeholder='Your Message' maxLength='1500' onChange={handleChange}>
           
         </textarea>
         <div className='flex flex-row justify-end w-[60vw]'>
@@ -63,9 +86,6 @@ export default function ContactPage({updatePageName}) {
             Submit
           </button>
         </div>
-      </div>
-      <div>
-        or reach out to me directly at vilemckael@gmail.com
       </div>
     </div>
   )

@@ -30,21 +30,34 @@ export default function Slider({slides}) {
         const diff = slideIndex - currentIndexes[0] % (slides.length);
         setCurrentIndexes((prevIndexes) => prevIndexes.map((index) => index - diff % (slides.length - 1)))
     }
+
+    const getIndexColor = (slideIndex) => {
+        if (currentIndexes[1] === slideIndex) {
+            return '#000000'
+        } else if (currentIndexes.includes(slideIndex)) {
+            return '#888888'
+        // } else if (currentIndexes.includes(slideIndex-1) || currentIndexes.includes(slideIndex+1)) {
+        //     return '#888888'
+        //
+        } else {
+            return '#BBBBBB'
+        }
+    }
     
   return (
-    <div className='w-full h-full m-auto my-[4vmin] px-4 relative group'>
+    <div className='w-full h-full m-auto my-[4vmin] py-[4vmin] relative group bg-[#558844] rounded-[20px]'>
         <div className='flex justify-evenly items-center'>
-            <div style={{backgroundImage: `url(${slides[currentIndexes[0]].demoGIF ? slides[currentIndexes[0]].demoGIF : tennisGIF})`}} className='relative w-[25vmin] h-[20vh] max-w-[25vw] max-h-[20vh] mx-[2vmin] rounded-2xl bg-center bg-cover duration-500'>
-                <div className='hover:block flex absolute bottom-0 justify-center items-end w-full z-30 bg-black/20'>
+            <div style={{backgroundImage: `url(${slides[currentIndexes[0]].demoGIF ? slides[currentIndexes[0]].demoGIF : tennisGIF})`}} className='relative w-[25vmin] h-[20vmin] max-w-[25vw] max-h-[20vh] mx-[2vmin] rounded-2xl bg-center bg-cover duration-500'>
+                <div className='flex absolute bottom-0 justify-center items-end w-full z-30 bg-black/20'>
                     {slides[currentIndexes[0]].title}
                 </div>
             </div>
-            <div style={{backgroundImage: `url(${slides[currentIndexes[1]].demoGIF ? slides[currentIndexes[1]].demoGIF : tennisGIF})`}} className='relative w-[25vmin] h-[20vh] max-w-[25vw] max-h-[20vh] mx-[2vmin] rounded-2xl bg-center bg-cover duration-500'>
+            <div style={{backgroundImage: `url(${slides[currentIndexes[1]].demoGIF ? slides[currentIndexes[1]].demoGIF : tennisGIF})`}} className='relative w-[40vmin] h-[30vmin] max-w-[35vw] max-h-[28h] mx-[2vmin] rounded-2xl bg-center bg-cover duration-500'>
                 <div className='flex absolute bottom-0 justify-center items-end w-full z-30 bg-black/20'>
                     {slides[currentIndexes[1]].title}
                 </div>
             </div>
-            <div style={{backgroundImage: `url(${slides[currentIndexes[2]].demoGIF ? slides[currentIndexes[2]].demoGIF : tennisGIF})`}} className='relative w-[25vmin] h-[20vh] max-w-[25vw] max-h-[20vh] mx-[2vmin] rounded-2xl bg-center bg-cover duration-500'>
+            <div style={{backgroundImage: `url(${slides[currentIndexes[2]].demoGIF ? slides[currentIndexes[2]].demoGIF : tennisGIF})`}} className='relative w-[25vmin] h-[20vmin] max-w-[25vw] max-h-[20vh] mx-[2vmin] rounded-2xl bg-center bg-cover duration-500'>
                 <div className='flex absolute bottom-0 justify-center items-end w-full z-30 bg-black/20'>
                     {slides[currentIndexes[2]].title}
                 </div>
@@ -59,7 +72,7 @@ export default function Slider({slides}) {
         <div className='flex top-4 justify-center pt-[5vmin]'>
             {Projects.map((card, idx) => (
                 <div className={'text-2xl cursor-pointer'} key={idx}>
-                    <RxDotFilled style={{color: `${idx === currentIndexes[0] ? 'grey' : 'black'}`}} onClick={() => goToSlide(idx)} />
+                    <RxDotFilled style={{color: getIndexColor(idx)}} onClick={() => goToSlide(idx)}/>
                 </div>
             ))}
         </div>

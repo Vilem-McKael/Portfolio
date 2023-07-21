@@ -35,7 +35,7 @@ export default function WelcomePage({updatePageName}) {
       </div>
       
       <div id='projects' className='bg-accent1 px-[10vw] pb-[10vh]'>
-        <div className='sticky top-0 flex justify-end items-center mb-[8vh]'>
+        <div className='sticky top-0 flex justify-end items-center mb-[8vh] z-50'>
           <div className='border-dark border-[.3vmin] border-t-light2 rounded-b-[10px]'>
             <h1 style={{backgroundColor: Colors.light2}} className=' text-[48px] py-[1vh] px-[2vh] border-black border-[.1vmin] border-t-light2 font-bold rounded-b-[6px]'>Projects</h1>
           </div>
