@@ -5,13 +5,13 @@ export default {
     extend: {
       colors: {
         transparent: 'transparent',
-        light1: '#FFFF82',
-        light2: '#F5F7DC',
-        accent1: '#B5D99C',
-        accent2: '#E65F5C',
-        accent2_dark: '#D14F4A',
-        med_dark: '#2B1142',
-        dark: '#0F0326'
+        light1: '#F8F9FA',
+        light2: '#DEE2E6',
+        accent1: '#ADB5BD',
+        accent2: '#6C757D',
+        accent2_dark: '#495057',
+        med_dark: '#343A40',
+        dark: '#212529'
       },
     },
   },

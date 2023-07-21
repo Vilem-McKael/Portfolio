@@ -9,6 +9,7 @@ import skills from '../../constants/skillsList'
 import Colors from '../../constants/colors'
 
 import tobey from '../../assets/images/tobey-maguire.png'
+import vilem from '../../assets/images/vilem.png'
 import codeImg from '../../assets/images/code.png'
 
 import { Carousel } from 'react-responsive-carousel'
@@ -23,21 +24,21 @@ export default function WelcomePage({updatePageName}) {
   }, [])
 
   return (
-    <div className='flex flex-col w-[100vw]'>
-      <div className='flex flex-col relative h-[75vh] w-[100%] px-[10vw] justify-center items-end bg-light2'>
+    <div className='flex flex-col w-[100vw] items-center'>
+      <div className='flex flex-col relative h-[75vh] w-[80vw] max-w-[1200px] px-[10vw] justify-center items-end bg-light2'>
         <div className='w-[40%]'>
           <div className='text-[4vmin] text-light1 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>Front End</div>
           <div className='text-[4vmin] text-accent2 ml-8 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>Software Engineer</div>
         </div>
         <div className='w-[50%]'>
-          <img id="tobey" src={tobey} className="absolute bottom-0 left-[10vw] max-h-[100%] max-w-[60%]" />
+          <img id="tobey" src={vilem} className="absolute bottom-0 left-[10vw] max-h-[100%] max-w-[60%]" />
         </div>
       </div>
       
-      <div id='projects' className='bg-accent1 px-[10vw] pb-[10vh]'>
+      <div id='projects' className='bg-accent1 max-w-[1200px] px-[10vw] pb-[10vh]'>
         <div className='sticky top-0 flex justify-end items-center mb-[8vh] z-50'>
           <div className='border-dark border-[.3vmin] border-t-light2 rounded-b-[10px]'>
-            <h1 style={{backgroundColor: Colors.light2}} className=' text-[48px] py-[1vh] px-[2vh] border-black border-[.1vmin] border-t-light2 font-bold rounded-b-[6px]'>Projects</h1>
+            <h1 className='text-[48px] py-[1vh] px-[2vh] bg-light2 border-black border-[.1vmin] border-t-light2 font-bold rounded-b-[6px]'>Projects</h1>
           </div>
         </div>
         <Slider slides={Projects}/>
