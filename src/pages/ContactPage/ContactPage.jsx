@@ -38,7 +38,7 @@ export default function ContactPage({updatePageName}) {
   }
 
   return (
-    <div className='flex flex-col justify-center items-center h-[90vh] w-[100vw] px-[10vw] text-light2 text-center'>
+    <div className='flex flex-col justify-center items-center h-[90vh] w-[100vw] px-[10vw] bg-gradient-to-br from-dark to-med_dark text-light2 text-center'>
       <div className='mt-[8vh] mb-[4vh] bg-light1 border-light border-[.3vmin] rounded-[10px]'>
             <h1 className='text-[48px] text-dark py-[1vh] px-[2vh] border-black border-[.1vmin] font-bold rounded-[6px]'>Contact Me</h1>
           </div>

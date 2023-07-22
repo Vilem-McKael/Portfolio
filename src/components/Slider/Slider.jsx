@@ -45,7 +45,7 @@ export default function Slider({slides}) {
     }
     
   return (
-    <div className='w-full h-full m-auto my-[4vmin] py-[4vmin] relative group bg-[#558844] rounded-[20px]'>
+    <div className='w-full h-full m-auto my-[4vmin] py-[4vmin] relative group bg-light2 border-med_dark border-[10px] rounded-[20px]'>
         <div className='flex justify-evenly items-center'>
             <div style={{backgroundImage: `url(${slides[currentIndexes[0]].demoGIF ? slides[currentIndexes[0]].demoGIF : tennisGIF})`}} className='relative w-[25vmin] h-[20vmin] max-w-[25vw] max-h-[20vh] mx-[2vmin] rounded-2xl bg-center bg-cover duration-500'>
                 <div className='flex absolute bottom-0 justify-center items-end w-full z-30 bg-black/20'>

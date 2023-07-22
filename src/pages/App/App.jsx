@@ -22,14 +22,14 @@ function App() {
   }
 
   return (
-    <div id='app' className='bg-white relative'>
+    <div id='app' className='relative'>
       <div id='social-buttons' className='fixed right-[2vh] top-[4vh] z-20'>
-        <SocialButtons />
+        {currentPageName !== 'contact' && <SocialButtons />}
       </div>
       <div id='sidebar' className='fixed z-10 left-0 h-[100vh] flex flex-col justify-center'> 
         <SideBar currentPageName={currentPageName}/>
       </div>
-      <div id="main" className='bg-gradient-to-br from-dark to-med_dark'>
+      <div id="main" className='bg-light1'>
         <Routes>
           <Route path='/' element={<WelcomePage updatePageName={updatePageName}/>}/>
           <Route path='/about' element={<AboutPage updatePageName={updatePageName}/>}/>

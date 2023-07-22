@@ -3,6 +3,12 @@
   min-height: 100vh;
 }
 
+#main {
+  background: url('../../assets/images/whitefloral.png');
+  background-size: auto;
+  background-repeat: repeat;
+}
+
 /* #app::-webkit-scrollbar {
   display: none;
 } */
