@@ -6,14 +6,14 @@ import SkillCard from '../../components/SkillCard/SkillCard'
 
 import Projects from '../../constants/projects'
 import skills from '../../constants/skillsList'
-import Colors from '../../constants/colors'
 
-import tobey from '../../assets/images/tobey-maguire.png'
 import vilem from '../../assets/images/vilem.png'
 import codeImg from '../../assets/images/code.png'
 
-import { Carousel } from 'react-responsive-carousel'
-import ProjectCarousel from '../../components/ProjectCarousel/ProjectCarousel'
+// import resume from '../../assets/docs/resume.pdf'
+// import { Document, Page, pdfjs } from 'react-pdf'
+// pdfjs.GlobalWorkerOptions.workerSrc =  `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
+
 import Slider from '../../components/Slider/Slider'
 
 export default function WelcomePage({updatePageName}) {
@@ -36,18 +36,19 @@ export default function WelcomePage({updatePageName}) {
           <div className='text-[4vmin] text-accent2 ml-8 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>Software Engineer</div>
           <div className='text-[4vmin] text-light1 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>Front End // Full Stack</div>
         </div>
-        <div className='absolute right-[4vw] bottom-[20vh] w-[40%] flex flex-col justify-center items-end bg-light1 p-4 rounded-[5px] shadow-black shadow-lg'>
-          <div className='text-[32px]'>
+        <div className='absolute right-[4vw] bottom-[20vh] w-[40%] h-[30%] flex flex-col justify-evenly items-end bg-light1 p-4 rounded-[5px] shadow-black shadow-lg'>
+          <div className='text-[3vmin] mb-1'>
             Bringing great ideas to life, one line of code at a time.
           </div>
-          <div className=''>
+          <div className='mb-1 text-[14px]'>
             As a detail-oriented software developer, I am driven to create inspired web applications that are innovative in functionality and design.
             <br />
               
           </div>
-          <div>
-            <div onClick={() => window.open('../../assets/docs/vilemmckael.pdf')}>Resume</div>
-          </div>
+          <a href='Vilem McKael Resume.pdf' download={true} className='flex flex-row items-center text-light1 bg-green-800 hover:bg-green-700 p-2 rounded-[5px]'>
+            <div>Resumé </div>
+            <i className='mt-[6px] ml-[2px] icon flaticon-next'></i>
+          </a>
         </div>
         <div className='w-[50%]'>
           <img id="vilem" src={vilem} className="absolute bottom-0 left-[10vw] max-h-[100%] max-w-[40%]" />
