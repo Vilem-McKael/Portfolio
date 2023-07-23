@@ -2,15 +2,12 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div className='flex flex-row justify-evenly items-center w-[100%] h-[10vh] bg-dark text-light2'>
+    <div className='flex flex-row justify-evenly items-center w-[100vw] h-[10vh] bg-dark text-light2'>
         <div>
-            LinkedIn
+            Made with 🧡 by Vilem McKael
         </div>
         <div>
-            GitHub
-        </div>
-        <div>
-            All Rights Reserved 2023
+            All Rights Reserved
         </div>
     </div>
   )
