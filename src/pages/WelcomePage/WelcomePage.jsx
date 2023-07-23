@@ -41,7 +41,7 @@ export default function WelcomePage({updatePageName}) {
             Bringing great ideas to life, one line of code at a time.
           </div>
           <div className='mb-1 text-[14px]'>
-            As a detail-oriented software developer, I am driven to create inspired web applications that are innovative in functionality and design.
+            As a detail-oriented software developer, I am driven to create web applications that are innovative in their functionality and design.
             <br />
               
           </div>
