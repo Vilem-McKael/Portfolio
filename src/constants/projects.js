@@ -1,4 +1,8 @@
 import downbeatGIF from '../assets/gifs/downbeatGIF.gif'
+import downbeat1 from '../assets/projectSlideImages/downbeat/downbeat1.png'
+import downbeat2 from '../assets/projectSlideImages/downbeat/downbeat2.png'
+import downbeat3 from '../assets/projectSlideImages/downbeat/downbeat3.png'
+import downbeat4 from '../assets/projectSlideImages/downbeat/downbeat4.png'
 
 const Projects = [
   {
@@ -8,7 +12,13 @@ const Projects = [
     liveLink: 'https://downbeat-daw.herokuapp.com/',
     githubLink: '',
     demoGIF: downbeatGIF,
-    images: []
+    images: [
+      downbeatGIF,
+      downbeat1,
+      downbeat2,
+      downbeat3,
+      downbeat4
+    ]
   },
   {
     
