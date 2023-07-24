@@ -13,7 +13,7 @@ export default function ProjectPage({updatePageName}) {
 
   return (
     <div className='snap-y snap-mandatory bg-light2 w-[100vw]] h-[100vh] overflow-scroll'>
-      {Projects.map((project, idx) => <ProjectSlide key={idx} title={project.title} description={project.description} technologies={project.technologies} liveLink={project.liveLink} githubLink={project.githubLink} images={project.images} demoGIF={project.demoGIF} index={idx}/>)}
+      {Projects.map((project, idx) => <ProjectSlide key={idx} title={project.title} subheader={project.subheader} id={project.id} description={project.description} technologies={project.technologies} liveLink={project.liveLink} githubLink={project.githubLink} images={project.images} demoGIF={project.demoGIF} index={idx}/>)}
     </div>
   )
 }

@@ -25,22 +25,22 @@ export default function WelcomePage({updatePageName}) {
 
   return (
     <div className='flex flex-col w-[100vw] items-center'>
-      <div className='flex flex-col relative h-[70vh] w-[100vw] max-w-[1200px] px-[10vw] items-center bg-light2 border-black border-x-[1px]'>
-        <div className='flex flex-col justify-center items-center h-[150px] w-[150px] mt-[4vh] mb-[2vh] bg-light1 border-med_dark border-[5px] rounded-[50%] shadow-black shadow-lg'>
-          <div className='text-dark text-3xl font-bold text-center'>
+      <div className='flex flex-col relative h-[70vh] w-[100vw] max-w-[1200px] px-[10vw] items-center bg-light1 border-black border-x-[1px]'>
+        <div className='flex flex-col justify-center items-center h-[150px] w-[150px] mt-[4vh] mb-[2vh] bg-black border-med_dark border-[5px] rounded-[50%] shadow-black shadow-lg'>
+          <div className='text-light1 text-3xl font-bold text-center'>
             Vilem McKael
           </div>
         </div>
         <div className='w-[100%]'>
           
-          <div className='text-[4vmin] text-accent2 ml-8 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>Software Developer</div>
-          <div className='text-[4vmin] text-light1 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>Front End // Full Stack</div>
+          <div className='text-[3.5vmin] text-accent2 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>Software Developer</div>
+          <div className='text-[3.5vmin] text-med_dark ml-16 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>Front End // Full Stack</div>
         </div>
-        <div className='absolute right-[4vw] bottom-[20vh] w-[40%] h-[30%] flex flex-col justify-evenly items-end bg-light1 p-4 rounded-[5px] shadow-black shadow-lg'>
+        <div className='absolute right-[4vw] top-[30vh] w-[40%] flex flex-col justify-evenly items-end bg-light1 p-4 rounded-[10px] border-black border-[3px] shadow-black shadow-lg'>
           <div className='text-[3vmin] mb-1'>
             Bringing great ideas to life, one line of code at a time.
           </div>
-          <div className='mb-1 text-[14px]'>
+          <div className='mb-1 text-[calc(10px+.5vh)]'>
             As a detail-oriented software developer, I am driven to create web applications that are innovative in their functionality and design.
             <br />
               

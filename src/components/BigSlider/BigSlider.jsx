@@ -35,7 +35,7 @@ export default function BigSlider({slides}) {
   return (
     <div className='w-[70vw] h-[60vh] relative group bg-accent1 border-med_dark border-[10px] rounded-[20px]'>
         <div className='w-full h-full flex flex-col justify-evenly items-center'>
-            <div style={{backgroundImage: `url(${slides[currentIndex]})`}} className='w-[60vmin] h-[50vmin] max-w-[80vw] max-h-[70vh] rounded-2xl bg-center bg-cover'>
+            <div style={{backgroundImage: `url(${slides[currentIndex]})`}} className='w-[60vmin] h-[50vmin] max-w-[80vw] max-h-[70vh] rounded-2xl bg-center bg-contain bg-no-repeat'>
             </div>
             <div className='flex justify-center'>
             {slides.map((card, idx) => (
