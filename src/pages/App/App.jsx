@@ -36,11 +36,8 @@ function App() {
           <Route path='/projects' element={<ProjectPage updatePageName={updatePageName}/>}/>
           <Route path='/contact' element={<ContactPage updatePageName={updatePageName}/>}/>
         </Routes>
-        <Footer />
+        {currentPageName !== 'projects' && <Footer />}
       </div>
-      {/* <div>
-        <Footer />
-      </div> */}
     </div>
     
   )

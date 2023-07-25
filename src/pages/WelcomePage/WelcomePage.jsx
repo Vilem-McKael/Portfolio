@@ -88,8 +88,12 @@ export default function WelcomePage({updatePageName}) {
 
       </div>
 
-      <div className='flex flex-col justify-center items-center w-[100vw] text-light2 bg-dark'>
+      <div className='flex flex-col justify-center items-center w-[100vw] pt-[2vh] text-light2 bg-dark'>
         <h1 className='text-[32px]'>This portfolio was built using React.js & TailwindCSS</h1>
+        <h1 className='text-[16px] mt-[2vh]'>
+        Check out some of my projects by heading to the project page,<br />
+        or find out how to get in touch with me on the contact page!
+        </h1>
       </div>
       
 
