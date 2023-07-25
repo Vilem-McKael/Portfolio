@@ -52,7 +52,7 @@ export default function SideBar({currentPageName}) {
   return (
     <>
     
-    <div className='flex flex-col items-start justify-evenly fixed left-0 my-auto h-[400px] p-[2vmin] bg-accent2 border-[.3vmin] border-l-0 border-light2 rounded-r-[20px]' onMouseLeave={() => clearHovers()}>
+    <div className='flex flex-col items-start justify-evenly fixed left-0 my-auto h-[400px] p-[2vmin] bg-accent2 border-[.3vmin] border-l-0 border-light2 rounded-r-[20px] transition-transform' onMouseLeave={() => clearHovers()}>
         
             {/*  for bottom border: border-light2 border-b-[.3vmin] */}
             <div onMouseEnter={() => handleHover('welcome')} className='flex flex-row items-center h-[25vh]'>
@@ -69,7 +69,7 @@ export default function SideBar({currentPageName}) {
                 </div>
             </div>
 
-            <div onMouseEnter={() => handleHover('about')} className='flex flex-row items-center h-[25vh] mt-[1vmin]'>
+            {/* <div onMouseEnter={() => handleHover('about')} className='flex flex-row items-center h-[25vh] mt-[1vmin]'>
                 <Link to='/about'><i className='icon flaticon-avatar text-2xl text-accent2 px-[10px] pt-[10px] pb-[5px] rounded-[50%] bg-light2 transition-transform delay-50 hover:bg-light1'></i></Link>
                 <div className='sub-menu-parent flex flex-col'>
                 {hoverAbout && sideBarInfo['about'].map((link, idx) => {
@@ -80,7 +80,7 @@ export default function SideBar({currentPageName}) {
                     )
                 })}
                 </div>
-            </div>
+            </div> */}
 
             <div onMouseEnter={() => handleHover('projects')} className='flex flex-row items-center h-[25vh] mt-[1vmin]'>
                 <Link to='/projects'><i className='icon flaticon-browser-1 text-2xl text-accent2 px-[10px] pt-[10px] pb-[5px] rounded-[50%] bg-light2 transition-transform delay-50 hover:bg-light1'></i></Link>

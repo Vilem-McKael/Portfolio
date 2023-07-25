@@ -22,62 +22,62 @@ const sideBarInfo = {
             text: 'About This Portfolio'
         },
     ],
-    about: [
-        {
-            to: '#',
-            text: 'Gallery'
-        },
-        {
-            to: '#',
-            text: 'Bio'
-        },
-        {
-            to: '#',
-            text: 'Education'
-        },
-        {
-            to: '#',
-            text: 'LinkedIn'
-        },
-        {
-            to: '#',
-            text: 'Resume'
-        },
-    ],
+    // about: [
+    //     {
+    //         to: '#',
+    //         text: 'Gallery'
+    //     },
+    //     {
+    //         to: '#',
+    //         text: 'Bio'
+    //     },
+    //     {
+    //         to: '#',
+    //         text: 'Education'
+    //     },
+    //     {
+    //         to: '#',
+    //         text: 'LinkedIn'
+    //     },
+    //     {
+    //         to: '#',
+    //         text: 'Resume'
+    //     },
+    // ],
     projects: [
         {
-            to: '#',
+            to: '/projects/#downbeat',
             text: 'downbeat'
         },
         {
-            to: '#',
+            to: '/projects/#catalyst',
             text: 'Catalyst'
         },
         {
-            to: '#',
+            to: '/projects/#cisms',
             text: 'Can I Share My Screen?'
         },
         {
-            to: '#',
-            text: 'Checkers'
+            to: '/projects/#checkers',
+            text: 'Ultimate Leapfrog'
         },
         {
-            to: '#',
+            to: '/projects/#portfolio',
+            text: 'Portfolio'
+        },
+        {
+            to: '/projects/#vouch',
             text: 'Vouch'
         },
         {
-            to: '#',
+            to: '/projects/#downbeat-ios',
             text: 'downbeat-iOS'
         }
     ],
     contact: [
         {
-            to: '#',
-            text: 'Email Form'
-        },
-        {
-            to: '#',
-            text: 'Contact Info'
+            to: '/contact',
+            text: 'Contact Me'
         }
     ]
 }
