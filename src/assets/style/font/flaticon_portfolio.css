@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon_portfolio";
-    src: url("./flaticon_portfolio.ttf?a1e43bc9b666def6ff83ebcd80394160") format("truetype"),
-url("./flaticon_portfolio.woff?a1e43bc9b666def6ff83ebcd80394160") format("woff"),
-url("./flaticon_portfolio.woff2?a1e43bc9b666def6ff83ebcd80394160") format("woff2"),
-url("./flaticon_portfolio.eot?a1e43bc9b666def6ff83ebcd80394160#iefix") format("embedded-opentype"),
-url("./flaticon_portfolio.svg?a1e43bc9b666def6ff83ebcd80394160#flaticon_portfolio") format("svg");
+    src: url("./flaticon_portfolio.ttf?612121f69aee6c4a2edecde051b898f9") format("truetype"),
+url("./flaticon_portfolio.woff?612121f69aee6c4a2edecde051b898f9") format("woff"),
+url("./flaticon_portfolio.woff2?612121f69aee6c4a2edecde051b898f9") format("woff2"),
+url("./flaticon_portfolio.eot?612121f69aee6c4a2edecde051b898f9#iefix") format("embedded-opentype"),
+url("./flaticon_portfolio.svg?612121f69aee6c4a2edecde051b898f9#flaticon_portfolio") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -110,4 +110,16 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 .flaticon-right-arrow-1:before {
     content: "\f11f";
+}
+.flaticon-more:before {
+    content: "\f120";
+}
+.flaticon-menu:before {
+    content: "\f121";
+}
+.flaticon-square:before {
+    content: "\f122";
+}
+.flaticon-square-1:before {
+    content: "\f123";
 }

@@ -10,12 +10,14 @@ import sideBarInfo from '../../constants/sidebarLinkInfo'
 
 import Colors from '../../constants/colors'
 
-export default function SideBar({currentPageName}) {
+export default function SideBar({currentPageName, mobileView}) {
 
     const [hoverHome, setHoverHome] = useState(false)
     const [hoverAbout, setHoverAbout] = useState(false)
     const [hoverProjects, setHoverProjects] = useState(false)
     const [hoverContact, setHoverContact] = useState(false)
+
+    const [showBurgerMenu, setShowBurgerMenu] = useState(false)
 
     function clearHovers() {
         setHoverHome(false);
@@ -49,10 +51,28 @@ export default function SideBar({currentPageName}) {
         }
     }
 
+    function toggleShowBurgerMenu() {
+        setShowBurgerMenu(() => !showBurgerMenu)
+    }
+
+
   return (
     <>
+    {mobileView ?
+    <>
+    {showBurgerMenu ?
+        <div className='flex justify-center items-center' onClick={toggleShowBurgerMenu}>
+            <i className='icon flaticon-more h-[50px] w-[50px]'></i>
+        </div>
+        :
+        <div className='flex justify-center items-center' onClick={toggleShowBurgerMenu}>
+            <i className='icon flaticon-more ml-4 mt-4 pt-1 h-[40px] w-[40px] text-[24px] text-light1 text-center bg-dark rounded-[5px]'></i>
+        </div>
+    }
     
-    <div className='flex flex-col items-start justify-evenly fixed left-0 my-auto h-[400px] p-[2vmin] bg-accent2 border-[.3vmin] border-l-0 border-light2 rounded-r-[20px] transition-transform' onMouseLeave={() => clearHovers()}>
+    </>
+    :
+    <div className='flex flex-col items-start justify-evenly fixed left-0 my-auto h-[400px] p-[2vmin] bg-accent2 border-[.3vmin] border-l-0 border-light2 rounded-r-[20px] transition-transform' onMouseLeave={() => clearHovers()} >
         
             {/*  for bottom border: border-light2 border-b-[.3vmin] */}
             <div onMouseEnter={() => handleHover('welcome')} className='flex flex-row items-center h-[25vh]'>
@@ -111,6 +131,7 @@ export default function SideBar({currentPageName}) {
             </div>
         </div>
     </div>
+    }
     </>
   )
 }

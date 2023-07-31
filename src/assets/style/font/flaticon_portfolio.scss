@@ -2,11 +2,11 @@ $flaticon_portfolio-font: "flaticon_portfolio";
 
 @font-face {
     font-family: $flaticon_portfolio-font;
-    src: url("./flaticon_portfolio.ttf?a1e43bc9b666def6ff83ebcd80394160") format("truetype"),
-url("./flaticon_portfolio.woff?a1e43bc9b666def6ff83ebcd80394160") format("woff"),
-url("./flaticon_portfolio.woff2?a1e43bc9b666def6ff83ebcd80394160") format("woff2"),
-url("./flaticon_portfolio.eot?a1e43bc9b666def6ff83ebcd80394160#iefix") format("embedded-opentype"),
-url("./flaticon_portfolio.svg?a1e43bc9b666def6ff83ebcd80394160#flaticon_portfolio") format("svg");
+    src: url("./flaticon_portfolio.ttf?612121f69aee6c4a2edecde051b898f9") format("truetype"),
+url("./flaticon_portfolio.woff?612121f69aee6c4a2edecde051b898f9") format("woff"),
+url("./flaticon_portfolio.woff2?612121f69aee6c4a2edecde051b898f9") format("woff2"),
+url("./flaticon_portfolio.eot?612121f69aee6c4a2edecde051b898f9#iefix") format("embedded-opentype"),
+url("./flaticon_portfolio.svg?612121f69aee6c4a2edecde051b898f9#flaticon_portfolio") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -52,6 +52,10 @@ $flaticon_portfolio-map: (
     "arrow-right": "\f11d",
     "next-2": "\f11e",
     "right-arrow-1": "\f11f",
+    "more": "\f120",
+    "menu": "\f121",
+    "square": "\f122",
+    "square-1": "\f123",
 );
 
 .flaticon-home:before {
@@ -146,4 +150,16 @@ $flaticon_portfolio-map: (
 }
 .flaticon-right-arrow-1:before {
     content: map-get($flaticon_portfolio-map, "right-arrow-1");
+}
+.flaticon-more:before {
+    content: map-get($flaticon_portfolio-map, "more");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon_portfolio-map, "menu");
+}
+.flaticon-square:before {
+    content: map-get($flaticon_portfolio-map, "square");
+}
+.flaticon-square-1:before {
+    content: map-get($flaticon_portfolio-map, "square-1");
 }
