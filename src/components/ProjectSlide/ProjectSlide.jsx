@@ -9,7 +9,7 @@ const ColorDict = {
     2: 'accent1',
     3: 'light1',
     4: 'light2',
-    5: 'dark',
+    5: 'med_dark',
     6: 'accent1',
 }
 
@@ -28,7 +28,7 @@ export default function ProjectSlide({title, subheader, id, description, technol
           <div onClick={() => window.open(githubLink)} className='bg-dark text-light1 text-[10px] md:text-[16px] text-center p-[1vmin] mr-[10vw] rounded-[6px] cursor-pointer underline'>GitHub</div>
         </div>
         <BigSlider slides={images}/> 
-        <div className='px-[10vw] md:px-[20vw] text-[10px] md:text-[16px] mt-[2vh]'>{description}</div>
+        <div className='px-[10vw] md:px-[20vw] text-[11px] md:text-[16px] mt-[2vh]'>{description}</div>
         <div className='flex flex-col mt-[2vh]'>
           <div className='text-center text-[10px] font-bold md:text-[16px] mb-[1vh] mx-[10vw]'>
           {title} was built using the following technologies:<br />
