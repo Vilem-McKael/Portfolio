@@ -65,7 +65,7 @@ const Projects = [
     technologies: [react, django, djangorestframework, postgresql, python3, javascript, tailwind, heroku, netlify],
     liveLink: 'https://zippy-cranachan-baf821.netlify.app/',
     githubLink: 'https://github.com/Vilem-McKael/Catalyst',
-    demoGIF: '',
+    demoGIF: catalyst1,
     images: [catalyst1, catalyst2, catalyst3]
   },
   {
@@ -76,7 +76,7 @@ const Projects = [
     technologies: [express, node, mongodb, mongoose, bootstrap, heroku],
     liveLink: 'https://can-i-share-my-screen.herokuapp.com/',
     githubLink: 'https://github.com/Tri-Coders-SMV/can-i-share-my-screen',
-    demoGIF: '',
+    demoGIF: cisms1,
     images: [cisms1, cisms2, cisms3]
   },
   {
