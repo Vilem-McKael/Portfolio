@@ -18,7 +18,7 @@ export default function ProjectSlide({title, subheader, id, description, technol
     
 
   return (
-    <div id={id} style={{backgroundColor: Colors[ColorDict[index]]}} className='snap-start flex flex-col justify-center items-center h-[100vh] w-[100vw]'>
+    <div id={id} style={{backgroundColor: Colors[ColorDict[index]]}} className='snap-start flex flex-col justify-center items-center h-[100vh] w-[100vw] py-[5vh] md:py-0'>
         <div className='flex flex-row w-full justify-between items-end mb-[2vmin] px-[10vw]'>
           <div onClick={() => window.open(liveLink)} className='bg-dark text-light1 text-[10px] md:text-[16px] p-[1vmin] ml-[10vw] rounded-[6px] cursor-pointer underline'>Try it!</div>
           <div className='flex flex-col justify-center items-center'>
