@@ -63,10 +63,10 @@ export default function Slider({slides}) {
                 </div>
             </div>
         </div>
-        <div className='hidden group-hover:block absolute md:top-[85%] left-2 md:left-[10vmin] rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+        <div className='md:hidden group-hover:block absolute top-[72%] md:top-[85%] left-2 md:left-[10vmin] rounded-full p-2 bg-black/20 text-white cursor-pointer'>
             <BsChevronCompactLeft onClick={prevSlide} size={30} />
         </div>
-        <div className='hidden group-hover:block absolute md:top-[85%] right-2 md:right-[10vmin] rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+        <div className='md:hidden group-hover:block absolute top-[72%] md:top-[85%] right-2 md:right-[10vmin] rounded-full p-2 bg-black/20 text-white cursor-pointer'>
             <BsChevronCompactRight onClick={nextSlide} size={30} />
         </div>
         <div className='flex top-4 justify-center pt-[5vmin]'>
