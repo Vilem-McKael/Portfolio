@@ -100,7 +100,7 @@ const Projects = [
     title: 'This Portfolio',
     subheader: 'Anyone up for some recursion?',
     id: 'portfolio',
-    description: 'Arguably the greatest portfolio, website even, of all time',
+    description: 'Possibly the greatest portfolio, website even, of all time',
     technologies: [react, express, node, tailwind],
     liveLink: 'https://vilemmckael.netlify.app',
     githubLink: 'https://github.com/Vilem-McKael/portfolio',

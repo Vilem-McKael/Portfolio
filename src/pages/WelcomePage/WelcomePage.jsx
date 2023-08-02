@@ -21,7 +21,7 @@ export default function WelcomePage({updatePageName}) {
 
   return (
     <div className='flex flex-col w-[100vw] items-center'>
-      <div className='flex flex-col relative h-[70vh] w-[100vw] max-w-[1200px] px-[10vw] items-center bg-light1 border-black border-x-[1px]'>
+      <div className='flex flex-col relative h-[70vh] w-[100vw] max-w-[1200px] px-[10vw] lg:px-[100px] items-center bg-light1 border-black border-x-[1px]'>
         <div className='flex w-[100%] flex-row justify-evenly md:justify-between items-center'>
           <div className='flex flex-col justify-center items-center w-[80px] h-[80px] md:h-[150px] md:w-[150px] mt-[4vh] mb-[2vh] bg-black border-med_dark border-[5px] rounded-[50%] shadow-black shadow-lg'>
             <div className='text-light1 text-[3.5vmin] md:text-3xl font-bold text-center'>
@@ -33,7 +33,7 @@ export default function WelcomePage({updatePageName}) {
             <div className='text-[3.5vmin] text-med_dark ml-4 md:ml-16 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>Front End // Full Stack</div>
           </div>
         </div>
-          <div className='absolute right-[25px] md:right-[100px] top-[130px] md:top-[25vh] w-[50%] md:w-[40%] flex flex-col justify-evenly items-end bg-light2 p-2 md:p-4 rounded-[10px] rounded-bl-none border-black border-[3px] shadow-black shadow-lg'>
+          <div className='absolute right-[25px] md:right-[100px] top-[27vh] md:top-[25vh] w-[50%] md:w-[40%] flex flex-col justify-evenly items-end bg-light2 p-2 md:p-4 rounded-[10px] rounded-bl-none border-black border-[3px] shadow-black shadow-lg'>
             <div className='text-[3vmin] mb-1 italic'>
               Bringing great ideas to life, one line of code at a time.
             </div>
@@ -52,7 +52,7 @@ export default function WelcomePage({updatePageName}) {
           </div>
       </div>
       
-      <div id='projects' className='bg-accent1 w-[100vw] max-w-[1200px] px-[10vw] pb-[10vh] border-black border-x-[1px]'>
+      <div id='projects' className='bg-accent1 w-[100vw] max-w-[1200px] px-[10vw] lg:px-[100px] pb-[10vh] border-black border-x-[1px]'>
         <div className='sticky top-0 flex justify-end items-center mb-[4vh] md:mb-[8vh] mr-6 md:mr-0 z-40 md:z-50'>
           <div className='border-dark border-[.3vmin] border-t-light1 rounded-b-[10px]'>
             <h1 className='text-[24px] md:text-[48px] py-[1vh] px-[2vh] bg-light1 border-black border-[.1vmin] border-t-light1 font-bold rounded-b-[6px]'>Projects</h1>
@@ -62,11 +62,11 @@ export default function WelcomePage({updatePageName}) {
 
       </div>
         
-      <div id='skills' className='bg-gradient-to-br from-dark to-med_dark w-[100vw] max-w-[1200px] px-[10vw] border-black border-x-[1px]'>
+      <div id='skills' className='bg-gradient-to-br from-dark to-med_dark w-[100vw] max-w-[1200px] px-[10vw] lg:px-[100px] border-black border-x-[1px]'>
         <div>
         <div className='sticky top-0 flex justify-end items-center mr-6 md:mr-0 '>
           <div className='mb-4 bg-accent1 border-light2 border-[.3vmin] border-t-accent1 rounded-b-[10px]'>
-            <h1 className='text-[24px] md:text-[48px] py-[1vh] px-[2vh] border-black border-[.1vmin] border-t-accent1 font-bold rounded-b-[6px]'>Skills</h1>
+            <h1 className='text-[24px] md:text-[48px] py-[1vh] px-[2vh] border-black border-[.1vmin] border-t-light2 font-bold rounded-b-[6px]'>Skills</h1>
           </div>
         </div>
           <div className='flex justify-center items-center'>
