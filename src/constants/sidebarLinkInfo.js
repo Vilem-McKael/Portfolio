@@ -12,15 +12,6 @@ const sideBarInfo = {
             to: '/#skills',
             text: 'Skills'
         },
-        
-        {
-            to: '#',
-            text: 'Current Projects'
-        },
-        {
-            to: '/#',
-            text: 'About This Portfolio'
-        },
     ],
     // about: [
     //     {

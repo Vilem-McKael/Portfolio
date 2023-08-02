@@ -38,6 +38,12 @@ import checkers2 from '../assets/projectSlideImages/ultimateLeapfrog/checkers2.p
 import checkers3 from '../assets/projectSlideImages/ultimateLeapfrog/checkers3.png'
 import checkers4 from '../assets/projectSlideImages/ultimateLeapfrog/checkers4.png'
 
+import portfolio1 from '../assets/projectSlideImages/portfolio/portfolio1.png'
+import portfolio2 from '../assets/projectSlideImages/portfolio/portfolio2.png'
+import portfolio3 from '../assets/projectSlideImages/portfolio/portfolio3.png'
+
+import comingSoon from '../assets/projectSlideImages/comingSoon/comingSoon.png'
+
 const Projects = [
   {
     title: 'downbeat',
@@ -87,19 +93,19 @@ const Projects = [
     technologies: [html, css, javascript],
     liveLink: 'https://vilem-mckael.github.io/Ultimate-Leapfrog-Checkers-Game/',
     githubLink: 'https://github.com/Vilem-McKael/Ultimate-Leapfrog-Checkers-Game',
-    demoGIF: '',
+    demoGIF: checkers1,
     images: [checkers1, checkers2, checkers3, checkers4]
   },
   {
     title: 'This Portfolio',
     subheader: 'Anyone up for some recursion?',
     id: 'portfolio',
-    description: 'Possibly the greatest portfolio, website even, of all time',
+    description: 'Arguably the greatest portfolio, website even, of all time',
     technologies: [react, express, node, tailwind],
     liveLink: 'https://vilemmckael.netlify.app',
     githubLink: 'https://github.com/Vilem-McKael/portfolio',
-    demoGIF: '',
-    images: []
+    demoGIF: portfolio2,
+    images: [portfolio1, portfolio2, portfolio3]
   },
   {
     
@@ -110,8 +116,8 @@ const Projects = [
     technologies: [],
     liveLink: '#',
     githubLink: '#',
-    demoGIF: '',
-    images: []
+    demoGIF: comingSoon,
+    images: [comingSoon]
   },
   {
     title: 'downbeat iOS',
@@ -119,10 +125,10 @@ const Projects = [
     id: 'downbeat-ios',
     description: 'Coming Soon!',
     technologies: [],
-    demoGIF: '',
+    demoGIF: comingSoon,
     liveLink: '#',
     githubLink: '#',
-    images: []
+    images: [comingSoon]
   },
 ]
 
