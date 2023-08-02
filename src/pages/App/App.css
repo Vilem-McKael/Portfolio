@@ -3,11 +3,13 @@
   min-height: 100vh;
 }
 
-#main {
-  background: url('../../assets/images/whitefloral.png');
-  background-size: auto;
-  background-repeat: repeat;
-}
+@media (min-width: 640px) {
+  #main {
+    background: url('../../assets/images/whitefloral.png');
+    background-size: auto;
+    background-repeat: repeat;
+  }
+} 
 
 /* #app::-webkit-scrollbar {
   display: none;

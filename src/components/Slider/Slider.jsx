@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+
+import { HashLink } from 'react-router-hash-link'
+
 import Projects from '../../constants/projects'
 
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
@@ -6,6 +9,7 @@ import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
 import {RxDotFilled} from 'react-icons/rx'
 
 import tennisGIF from '../../assets/gifs/tennisball.gif'
+import { Link } from 'react-router-dom'
 
 export default function Slider({slides}) {
 
@@ -47,21 +51,27 @@ export default function Slider({slides}) {
   return (
     <div className='w-full h-full m-auto my-[4vmin] py-[4vmin] relative group bg-light2 border-med_dark border-[10px] rounded-[20px]'>
         <div className='flex justify-evenly items-center'>
+            {/* <HashLink to={`/projects/#${slides[currentIndexes[0]].id}`} className='relative flex justify-center items-center'> */}
             <div style={{backgroundImage: `url(${slides[currentIndexes[0]].demoGIF ? slides[currentIndexes[0]].demoGIF : tennisGIF})`}} className='relative w-[25vmin] h-[20vmin] max-w-[25vw] max-h-[20vh] mx-[2vmin] rounded-2xl bg-center bg-cover duration-500'>
-                <div className='flex absolute bottom-0 rounded-b-2xl justify-center items-end text-light1 w-full text-[10px] text-center md:text-[16px] z-30 bg-black/40'>
+                <div className='flex absolute bottom-0 rounded-b-2xl justify-center items-end text-light1 w-full text-[10px] text-center md:text-[16px] z-30 bg-black/70'>
                     {slides[currentIndexes[0]].title}
                 </div>
             </div>
-            <div style={{backgroundImage: `url(${slides[currentIndexes[1]].demoGIF ? slides[currentIndexes[1]].demoGIF : tennisGIF})`}} className='relative w-[40vmin] h-[30vmin] max-w-[35vw] max-h-[28h] mx-[2vmin] rounded-2xl bg-center bg-cover duration-500'>
-                <div className='flex absolute bottom-0 rounded-b-2xl justify-center items-end text-light1 w-full text-[10px] text-center md:text-[16px] z-30 bg-black/40'>
+            {/* </HashLink> */}
+            {/* <HashLink to={`/projects/#${slides[currentIndexes[1]].id}`} className='relative flex justify-center items-center'> */}
+            <div style={{backgroundImage: `url(${slides[currentIndexes[1]].demoGIF ? slides[currentIndexes[1]].demoGIF : tennisGIF})`}} className='relative w-[40vmin] h-[30vmin] max-w-[35vw] max-h-[28vh] mx-[2vmin] rounded-2xl bg-center bg-cover duration-500'>
+                <div className='flex absolute bottom-0 rounded-b-2xl justify-center items-end text-light1 w-full text-[10px] text-center md:text-[16px] z-30 bg-black/70'>
                     {slides[currentIndexes[1]].title}
                 </div>
             </div>
+            {/* </HashLink> */}
+            {/* <HashLink to={`/projects/#${slides[currentIndexes[2]].id}`} className=' relative flex justify-center items-center'> */}
             <div style={{backgroundImage: `url(${slides[currentIndexes[2]].demoGIF ? slides[currentIndexes[2]].demoGIF : tennisGIF})`}} className='relative w-[25vmin] h-[20vmin] max-w-[25vw] max-h-[20vh] mx-[2vmin] rounded-2xl bg-center bg-cover duration-500'>
-                <div className='flex absolute bottom-0 rounded-b-2xl justify-center items-end text-light1 w-full text-[10px] text-center md:text-[16px] z-30 bg-black/40'>
+                <div className='flex absolute bottom-0 rounded-b-2xl justify-center items-end text-light1 w-full text-[10px] text-center md:text-[16px] z-30 bg-black/70'>
                     {slides[currentIndexes[2]].title}
                 </div>
             </div>
+            {/* </HashLink> */}
         </div>
         <div className='md:hidden group-hover:block absolute top-[72%] md:top-[85%] left-2 md:left-[10vmin] rounded-full p-2 bg-black/20 text-white cursor-pointer'>
             <BsChevronCompactLeft onClick={prevSlide} size={30} />

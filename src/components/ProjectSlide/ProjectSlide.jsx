@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 import Colors from '../../constants/colors.js'
 import BigSlider from '../BigSlider/BigSlider.jsx'
 import { Link } from 'react-router-dom'
@@ -13,12 +14,12 @@ const ColorDict = {
     6: 'accent1',
 }
 
-export default function ProjectSlide({title, subheader, id, description, technologies, liveLink, githubLink, demoGIF, images, index}) {
+export default function ProjectSlide({title, subheader, pid, description, technologies, liveLink, githubLink, demoGIF, images, index}) {
 
     
 
   return (
-    <div id={id} style={{backgroundColor: Colors[ColorDict[index]]}} className='snap-start flex flex-col justify-center items-center h-[100vh] w-[100vw] pt-[10vh] pb-[15vh] md:py-0'>
+    <div id={pid} style={{backgroundColor: Colors[ColorDict[index]]}} className='snap-start flex flex-col justify-center items-center h-[100vh] w-[100vw] pt-[10vh] pb-[15vh] md:py-0'>
         <div className='flex flex-row w-full justify-between items-end mb-[2vmin] px-[10vw]'>
           <div onClick={() => window.open(liveLink)} className='bg-dark text-light1 text-[10px] md:text-[16px] p-[1vmin] ml-[10vw] rounded-[6px] cursor-pointer underline'>Try it!</div>
           <div className='flex flex-col justify-center items-center'>
