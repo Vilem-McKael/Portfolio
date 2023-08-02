@@ -27,15 +27,12 @@ function App() {
   }, [])
 
   useEffect(() => {
-    function handleResize() {
-      console.log('resized to: ', window.innerWidth, 'x', window.innerHeight)
-      checkMobile();
-    }
-    window.addEventListener('resize', handleResize)
+    window.addEventListener('resize', checkMobile)
   }, [])
 
   function checkMobile() {
-    if (window.innerWidth <= 600 || window.innerHeight <= 600) {
+    console.log(window.innerWidth, 'x', window.innerHeight)
+    if (window.innerWidth <= 640) {
       setMobileView(true)
     } else {
       setMobileView(false)
@@ -44,16 +41,16 @@ function App() {
 
 
   return (
-    <div id='app' className='relative'>
-      <div id='social-buttons' className='fixed right-[2vh] top-[20px] md:top-[4vh] z-50 md:z-20'>
+    <div id='app' className='App relative'>
+      <div id='social-buttons' className='fixed right-[20px] top-[20px] md:top-[40px] z-50 sm:z-20'>
         {currentPageName !== 'contact' && <SocialButtons />}
       </div>
-      <div id='sidebar' className='fixed z-10 h-[100vh] left-0 flex flex-col justify-start md:justify-center'> 
+      <div id='sidebar' className='fixed z-10 h-[100vh] left-0 flex flex-col justify-start sm:justify-center'> 
         <SideBar currentPageName={currentPageName} mobileView={mobileView}/>
       </div>
       <div id="main" className='bg-light1'>
         <Routes>
-          <Route path='/' element={<WelcomePage updatePageName={updatePageName}/>}/>
+          <Route path='/*' element={<WelcomePage updatePageName={updatePageName}/>}/>
           <Route path='/about' element={<AboutPage updatePageName={updatePageName}/>}/>
           <Route path='/projects' element={<ProjectPage updatePageName={updatePageName}/>}/>
           <Route path='/contact' element={<ContactPage updatePageName={updatePageName}/>}/>

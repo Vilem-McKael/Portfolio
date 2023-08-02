@@ -76,23 +76,23 @@ export default function SideBar({currentPageName, mobileView}) {
   return (
     <>
     {mobileView ?
-    <>
-    {showBurgerMenu ?
-        <div id='openMenu' className='flex justify-center items-center'>
-            <div className='flex flex-col justify-evenly h-[220px] ml-2 mt-2 px-2 rounded-xl bg-dark border-dark border-[1px] text-light1 shadow-lg shadow-black'>
-                <Link to='/' className='flex flex-col justify-center items-center h-[40px] w-[40px]'><i className='icon flaticon-home text-xl text-accent2 px-[11px] pt-[10px] pb-[5px] rounded-[50%] bg-light2 transition-transform delay-50 hover:bg-light1'></i></Link>
-                <Link to='/projects' className='flex flex-col justify-center items-center h-[40px] w-[40px]'><i className='icon flaticon-browser-1 text-xl text-accent2 px-[11px] pt-[10px] pb-[5px] rounded-[50%] bg-light2 transition-transform delay-50 hover:bg-light1'></i></Link>
-                <Link to='/contact' className='flex flex-col justify-center items-center h-[40px] w-[40px]'><i className='icon flaticon-mail text-xl text-accent2 px-[11px] pt-[10px] pb-[5px] rounded-[50%] bg-light2 transition-transform delay-50 hover:bg-light1'></i></Link>
-                <Link onClick={toggleShowBurgerMenu} className='flex flex-col justify-center items-center h-[40px] w-[40px]'><div className='w-full h-full text-lg text-light p-[5px] pt-[7px] text-center rounded-[50%] bg-red-400'>X</div></Link>
+        <>
+        {showBurgerMenu ?
+            <div id='openMenu' className='flex justify-center items-center'>
+                <div className='flex flex-col justify-evenly h-[220px] ml-2 mt-2 px-2 rounded-xl bg-dark border-dark border-[1px] text-light1 shadow-lg shadow-black'>
+                    <Link to='/' className='flex flex-col justify-center items-center h-[40px] w-[40px]'><i className='icon flaticon-home text-xl text-accent2 px-[11px] pt-[10px] pb-[5px] rounded-[50%] bg-light2 transition-transform delay-50 hover:bg-light1'></i></Link>
+                    <Link to='/projects' className='flex flex-col justify-center items-center h-[40px] w-[40px]'><i className='icon flaticon-browser-1 text-xl text-accent2 px-[11px] pt-[10px] pb-[5px] rounded-[50%] bg-light2 transition-transform delay-50 hover:bg-light1'></i></Link>
+                    <Link to='/contact' className='flex flex-col justify-center items-center h-[40px] w-[40px]'><i className='icon flaticon-mail text-xl text-accent2 px-[11px] pt-[10px] pb-[5px] rounded-[50%] bg-light2 transition-transform delay-50 hover:bg-light1'></i></Link>
+                    <Link onClick={toggleShowBurgerMenu} className='flex flex-col justify-center items-center h-[40px] w-[40px]'><div className='w-full h-full text-lg text-light p-[5px] pt-[7px] text-center rounded-[50%] bg-red-400'>X</div></Link>
+                </div>
             </div>
-        </div>
-        :
-        <div id='closedMenu' className='flex justify-center items-center'>
-            <i id='menuIcon' onClick={toggleShowBurgerMenu} className='icon flaticon-more ml-2 mt-2 pt-1 h-[40px] w-[40px] text-[24px] text-light1 text-center bg-dark rounded-[5px] border-black border-[1px] shadow-lg shadow-black'></i>
-        </div>
-    }
-    
-    </>
+            :
+            <div id='closedMenu' className='flex justify-center items-center'>
+                <i id='menuIcon' onClick={toggleShowBurgerMenu} className='icon flaticon-more ml-2 mt-2 pt-1 h-[40px] w-[40px] text-[24px] text-light1 text-center bg-dark rounded-[5px] border-black border-[1px] shadow-md shadow-black'></i>
+            </div>
+        }
+        
+        </>
     :
     <div className='flex flex-col items-start justify-evenly fixed left-0 my-auto h-[400px] p-[2vmin] bg-accent2 border-[.3vmin] border-l-0 border-light2 rounded-r-[20px] transition-transform' onMouseLeave={() => clearHovers()} >
         
