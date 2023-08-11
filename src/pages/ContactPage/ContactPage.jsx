@@ -30,7 +30,7 @@ export default function ContactPage({updatePageName}) {
 
   const handleSubmit = async () => {
     setSubmitted(true)
-    await mailjetAPI.sendMessage(formData)
+    await mailjetAPI.sendMessageNetlifyServerless(formData)
       .then((result) => {
         console.log(result)
       }).catch((err) => {
