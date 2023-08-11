@@ -6,3 +6,7 @@ export function sendMessage(formData) {
     console.log(formData)
     return sendRequest(BASE_URL, 'POST', formData)
 }
+
+export function sendMessageNetlifyServerless(formData) {
+    return 
+}
