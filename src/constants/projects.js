@@ -67,7 +67,7 @@ const Projects = [
     title: 'Catalyst',
     subheader: 'Sparking Great Ideas',
     id: 'catalyst',
-    description: 'A community-driven web application in which users can create and join Collectives - forums in which they can exchange ideas with like-minded individuals.',
+    description: 'A community-driven web application in which users can create and join Collectives - forums in which they can exchange ideas with like-minded individuals.\nNOTE: Due to the sunsetting of bit.io\'s database software, Catalyst is in the process of transitioning to AWS and will be down for a short period of time.',
     technologies: [react, django, djangorestframework, postgresql, python3, javascript, tailwind, heroku, netlify],
     liveLink: 'https://zippy-cranachan-baf821.netlify.app/',
     githubLink: 'https://github.com/Vilem-McKael/Catalyst',
